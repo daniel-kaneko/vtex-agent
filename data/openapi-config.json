@@ -1,0 +1,6 @@
+{
+  "githubRepo": "vtex/openapi-schemas",
+  "branch": "master",
+  "filePrefix": "VTEX -",
+  "docsBaseUrl": "https://developers.vtex.com/docs/api-reference"
+}

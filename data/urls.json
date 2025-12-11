@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/setting-up",
+    "name": "FastStore Checkout Setting Up",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/getting-started",
+    "name": "FastStore Checkout Getting Started",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/data-layer-and-data-fetching",
+    "name": "FastStore Checkout Data Layer and Data Fetching",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/extension-points",
+    "name": "FastStore Checkout Extension Points",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/define-extensions",
+    "name": "FastStore Checkout Define Extensions",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/use-cart",
+    "name": "FastStore Checkout useCart Hook",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/use-cart-punchout",
+    "name": "FastStore Checkout useCartPunchout Hook",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/use-cart-item",
+    "name": "FastStore Checkout useCartItem Hook",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/use-settings",
+    "name": "FastStore Checkout useSettings Hook",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/use-extension",
+    "name": "FastStore Checkout useExtension Hook",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/use-redirect",
+    "name": "FastStore Checkout useRedirect Hook",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/cart-item",
+    "name": "FastStore Checkout CartItem Type",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/css-variables",
+    "name": "FastStore Checkout CSS Variables",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/reference/cli",
+    "name": "FastStore Checkout CLI",
+    "selector": ".sl-markdown-content"
+  },
+  {
+    "url": "https://faststore-platform.vercel.app/checkout/troubleshooting",
+    "name": "FastStore Checkout Troubleshooting",
+    "selector": ".sl-markdown-content"
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "fastcheckout": ["fast checkout", "checkout", "faststore checkout"],
+  "extension point": ["extension points", "Checkout Extension Points"],
+  "master data": ["masterdata", "Master Data API"]
+}

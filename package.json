@@ -6,10 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:build": "docker compose build",
+    "docker:chroma:up": "docker compose up -d chroma",
+    "docker:chroma:down": "docker compose down chroma",
+    "ingest:urls": "tsx scripts/ingest-urls.ts",
+    "ingest:urls:force": "tsx scripts/ingest-urls.ts --force",
+    "ingest:manual": "tsx scripts/ingest-manual.ts",
+    "ingest:openapi": "tsx scripts/ingest-openapi.ts",
+    "ingest:openapi:dry": "tsx scripts/ingest-openapi.ts --dry-run",
+    "ingest:openapi:force": "tsx scripts/ingest-openapi.ts --force",
+    "chroma:inspect": "tsx scripts/chroma-inspect.ts",
+    "chroma:reset": "tsx scripts/chroma-reset.ts",
+    "chroma:sync": "pnpm ingest:manual && pnpm ingest:urls && pnpm ingest:openapi && pnpm chroma:inspect",
+    "chroma:fresh": "pnpm chroma:reset && pnpm chroma:sync",
+    "ollama:start": "ollama serve",
+    "ollama:pull": "ollama pull llama3.1:8b && ollama pull mxbai-embed-large"
   },
   "dependencies": {
+    "cheerio": "^1.0.0",
+    "chromadb": "^1.9.2",
     "next": "16.0.8",
+    "ollama": "^0.5.11",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
@@ -21,6 +41,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.8",
     "tailwindcss": "^4",
+    "tsx": "^4",
     "typescript": "^5"
   }
 }

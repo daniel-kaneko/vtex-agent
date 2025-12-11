@@ -1,26 +1,196 @@
 @import "tailwindcss";
 
+/* Default: Grey */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-hard: #18181b;
+  --bg: #1f1f23;
+  --bg-soft: #27272a;
+  --bg-highlight: #3f3f46;
+  --fg: #e4e4e7;
+  --fg-dim: #a1a1aa;
+  --fg-muted: #71717a;
+  --accent: #a1a1aa;
+  --green: #86efac;
+  --yellow: #fde047;
+  --blue: #93c5fd;
+  --red: #fca5a5;
+  --orange: #fdba74;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Gruvbox theme */
+[data-theme="gruvbox"] {
+  --bg-hard: #1d2021;
+  --bg: #282828;
+  --bg-soft: #32302f;
+  --bg-highlight: #3c3836;
+  --fg: #ebdbb2;
+  --fg-dim: #a89984;
+  --fg-muted: #665c54;
+  --accent: #fabd2f;
+  --green: #b8bb26;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+  --red: #fb4934;
+  --orange: #fe8019;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Nord theme */
+[data-theme="nord"] {
+  --bg-hard: #242933;
+  --bg: #2e3440;
+  --bg-soft: #3b4252;
+  --bg-highlight: #434c5e;
+  --fg: #eceff4;
+  --fg-dim: #d8dee9;
+  --fg-muted: #4c566a;
+  --accent: #88c0d0;
+  --green: #a3be8c;
+  --yellow: #ebcb8b;
+  --blue: #81a1c1;
+  --red: #bf616a;
+  --orange: #d08770;
+}
+
+/* Tokyo Night theme */
+[data-theme="tokyo"] {
+  --bg-hard: #16161e;
+  --bg: #1a1b26;
+  --bg-soft: #24283b;
+  --bg-highlight: #414868;
+  --fg: #c0caf5;
+  --fg-dim: #a9b1d6;
+  --fg-muted: #565f89;
+  --accent: #bb9af7;
+  --green: #9ece6a;
+  --yellow: #e0af68;
+  --blue: #7aa2f7;
+  --red: #f7768e;
+  --orange: #ff9e64;
+}
+
+/* Catppuccin theme */
+[data-theme="catppuccin"] {
+  --bg-hard: #11111b;
+  --bg: #1e1e2e;
+  --bg-soft: #313244;
+  --bg-highlight: #45475a;
+  --fg: #cdd6f4;
+  --fg-dim: #bac2de;
+  --fg-muted: #6c7086;
+  --accent: #f5c2e7;
+  --green: #a6e3a1;
+  --yellow: #f9e2af;
+  --blue: #89b4fa;
+  --red: #f38ba8;
+  --orange: #fab387;
+}
+
+/* Matrix theme */
+[data-theme="matrix"] {
+  --bg-hard: #000000;
+  --bg: #0a0a0a;
+  --bg-soft: #0f1a0f;
+  --bg-highlight: #1a2e1a;
+  --fg: #00ff41;
+  --fg-dim: #00cc33;
+  --fg-muted: #006622;
+  --accent: #00ff41;
+  --green: #00ff41;
+  --yellow: #33ff77;
+  --blue: #00dd55;
+  --red: #ff3333;
+  --orange: #88ff44;
   }
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-highlight);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.15s ease-out;
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+::selection {
+  background: var(--blue);
+  color: var(--bg);
+}
+
+pre, code {
+  font-family: inherit;
+}
+
+.prose-chat p {
+  margin: 0.5em 0;
+}
+
+.prose-chat p:first-child {
+  margin-top: 0;
+}
+
+.prose-chat p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-chat code {
+  color: var(--orange);
+}
+
+.prose-chat pre {
+  background: var(--bg-hard);
+  border-left: 2px solid var(--fg-muted);
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  overflow-x: auto;
+}
+
+.prose-chat ul, .prose-chat ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.prose-chat strong {
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+.prose-chat a {
+  color: var(--blue);
+  text-decoration: underline;
 }
