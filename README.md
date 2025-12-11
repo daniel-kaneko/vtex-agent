@@ -138,6 +138,13 @@ Then run:
 pnpm ingest:openapi
 ```
 
+### Testing contexts
+
+Use the "Duck Rule" to check if contexts are being applied correctly.
+
+- Ask anything about ducks and the agent should respond with **"quack quack"**
+- If it doesn't, the instruction-following isn't working correctly
+
 **Features:**
 
 - Fetches OpenAPI specs directly from GitHub
