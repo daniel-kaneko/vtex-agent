@@ -52,7 +52,11 @@ next-env.d.ts
 
 # cache files
 data/.openapi-cache.json
+data/.sitemap-cache.json
 data/.urls-cache.json
+
+#temp files
+data/.sitemap-temp/
 
 # local ollama/chroma data (if running outside docker)
 .ollama/
