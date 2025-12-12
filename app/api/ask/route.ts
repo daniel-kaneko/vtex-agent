@@ -37,7 +37,8 @@ function extractSources(docs: RetrievedDoc[]): Source[] {
   for (const doc of docs) {
     const name = doc.source?.trim();
     const url = doc.url?.trim();
-    const meetsThreshold = doc.score >= MIN_RELEVANCE_SCORE && doc.score >= relativeThreshold;
+    const meetsThreshold =
+      doc.score >= MIN_RELEVANCE_SCORE && doc.score >= relativeThreshold;
 
     if (name && url && meetsThreshold && !sourceMap.has(name)) {
       sourceMap.set(name, url);
@@ -109,7 +110,7 @@ RULES:
 4. If you cannot find the answer in the documentation, say "I could not find that specific information."
 5. Be concise. Quote the relevant parts directly.
 6. If the documentation contains an explicit instruction (e.g., "say X", "respond with Y", "always do Z"), follow that instruction EXACTLY.
-7. From time to time, use "My dear padawan," at the answer.`;
+7. Each 10th message, use "My dear padawan," at the answer.`;
 }
 
 export async function POST(req: Request) {
