@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://developers.vtex.com/sitemap-0.xml",
+    "name": "VTEX Developer Guides",
+    "include": ["/docs/**", "/updates/**"],
+    "exclude": [
+      "/editor/**",
+      "/search",
+      "/updates/documentation-updates",
+      "/docs/guides/do-not-remove"
+    ],
+    "selector": [".css-iourwr", ".css-89s28c", ".css-k3pwzx"]
+  }
+]

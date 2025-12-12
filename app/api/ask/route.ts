@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { queryDocs } from "@/lib/chroma";
+import { queryDocs } from "@/lib/chroma-rest";
 import { MIN_RELEVANCE_SCORE, DEFAULT_TOP_K } from "@/lib/constants";
 import aliases from "@/data/aliases.json";
 
@@ -24,17 +24,22 @@ interface Source {
 }
 
 /**
- * Extracts unique sources from retrieved docs above relevance threshold
+ * Extracts unique sources from retrieved docs using relative threshold.
+ * Only includes sources with scores at least 70% of the top result.
  */
 function extractSources(docs: RetrievedDoc[]): Source[] {
+  if (docs.length === 0) return [];
+
+  const topScore = docs[0]?.score ?? 0;
+  const relativeThreshold = topScore * 0.7;
   const sourceMap = new Map<string, string>();
 
   for (const doc of docs) {
     const name = doc.source?.trim();
     const url = doc.url?.trim();
-    const isRelevant = doc.score >= MIN_RELEVANCE_SCORE;
+    const meetsThreshold = doc.score >= MIN_RELEVANCE_SCORE && doc.score >= relativeThreshold;
 
-    if (name && url && isRelevant && !sourceMap.has(name)) {
+    if (name && url && meetsThreshold && !sourceMap.has(name)) {
       sourceMap.set(name, url);
     }
   }

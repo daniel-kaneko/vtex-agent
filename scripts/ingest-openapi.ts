@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
-import crypto from "crypto";
-import { upsertDocs, getCollectionStats } from "../lib/chroma";
+import { upsertDocs, getCollectionStats } from "../lib/chroma-rest";
 import {
   loadCache,
   saveCache,
@@ -10,11 +9,10 @@ import {
   updateCacheEntry,
   CACHE_PATHS,
   DEFAULT_CACHE_TTL_DAYS,
+  Cache,
 } from "../lib/cache";
-
-// ============================================================================
-// Types
-// ============================================================================
+import { fetchUrl, processConcurrent } from "../lib/fetcher";
+import { hashString } from "../lib/chunking";
 
 interface OpenAPIConfig {
   githubRepo: string;
@@ -24,15 +22,10 @@ interface OpenAPIConfig {
 }
 
 interface OpenAPISpec {
-  info: {
-    title: string;
-    description?: string;
-  };
+  info: { title: string; description?: string };
   servers?: Array<{ url: string; description?: string }>;
   paths: Record<string, PathItem>;
-  components?: {
-    schemas?: Record<string, SchemaObject>;
-  };
+  components?: { schemas?: Record<string, SchemaObject> };
 }
 
 interface PathItem {
@@ -80,12 +73,18 @@ interface ChunkDoc {
   url: string;
 }
 
-// ============================================================================
-// Configuration
-// ============================================================================
+interface ProcessResult {
+  filename: string;
+  chunks: ChunkDoc[];
+  cached: boolean;
+  isNew: boolean;
+  error?: string;
+}
 
 const CONFIG_PATH = path.join(process.cwd(), "data", "openapi-config.json");
 const CACHE_PATH = path.join(process.cwd(), CACHE_PATHS.openapi);
+const DEFAULT_CONCURRENCY = 10;
+const DEFAULT_RATE_LIMIT_MS = 100;
 
 function loadConfig(): OpenAPIConfig {
   if (!fs.existsSync(CONFIG_PATH)) {
@@ -103,13 +102,6 @@ function getGithubApiBase(config: OpenAPIConfig): string {
   return `https://api.github.com/repos/${config.githubRepo}/contents`;
 }
 
-// ============================================================================
-// GitHub API
-// ============================================================================
-
-/**
- * Fetches list of OpenAPI JSON files from the repo
- */
 async function fetchOpenAPIFiles(config: OpenAPIConfig): Promise<string[]> {
   console.log("📡 Fetching OpenAPI schema list from GitHub...\n");
 
@@ -120,48 +112,37 @@ async function fetchOpenAPIFiles(config: OpenAPIConfig): Promise<string[]> {
     },
   });
 
-  if (!response.ok) {
-    throw new Error(`GitHub API error: ${response.status}`);
-  }
+  if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
 
   const files = (await response.json()) as Array<{
     name: string;
     type: string;
   }>;
-
   return files
-    .filter((f) => f.type === "file" && f.name.endsWith(".json"))
-    .filter((f) => f.name.startsWith(config.filePrefix))
+    .filter(
+      (f) =>
+        f.type === "file" &&
+        f.name.endsWith(".json") &&
+        f.name.startsWith(config.filePrefix)
+    )
     .map((f) => f.name);
 }
 
-/**
- * Fetches and parses a single OpenAPI spec file
- * Returns both the parsed spec and raw content for hashing
- */
 async function fetchSpec(
   filename: string,
   config: OpenAPIConfig
 ): Promise<{ spec: OpenAPISpec; raw: string } | null> {
-  const url = `${getGithubRawBase(config)}/${encodeURIComponent(filename)}`;
-
   try {
-    const response = await fetch(url);
-    if (!response.ok) return null;
-    const raw = await response.text();
+    const raw = await fetchUrl(
+      `${getGithubRawBase(config)}/${encodeURIComponent(filename)}`,
+      { accept: "application/json" }
+    );
     return { spec: JSON.parse(raw) as OpenAPISpec, raw };
   } catch {
     return null;
   }
 }
 
-// ============================================================================
-// OpenAPI Processing
-// ============================================================================
-
-/**
- * Extracts documentation chunks from an OpenAPI spec
- */
 function extractChunks(
   spec: OpenAPISpec,
   filename: string,
@@ -178,10 +159,7 @@ function extractChunks(
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
   const apiUrl = `${config.docsBaseUrl}/${apiSlug}`;
-
-  const hash = (str: string) =>
-    crypto.createHash("md5").update(str).digest("hex").slice(0, 8);
-  const fileHash = hash(filename);
+  const fileHash = hashString(filename, 8);
 
   if (spec.info.description) {
     chunks.push({
@@ -192,87 +170,73 @@ function extractChunks(
     });
   }
 
-  for (const [path, pathItem] of Object.entries(spec.paths)) {
-    const methods = ["get", "post", "put", "patch", "delete"] as const;
-
-    for (const method of methods) {
+  for (const [apiPath, pathItem] of Object.entries(spec.paths)) {
+    for (const method of ["get", "post", "put", "patch", "delete"] as const) {
       const operation = pathItem[method];
       if (!operation) continue;
 
       const endpointText = buildEndpointText(
         method.toUpperCase(),
-        path,
+        apiPath,
         operation,
         apiTitle
       );
+      if (endpointText.length <= 100) continue;
 
-      if (endpointText.length > 100) {
-        const tags = operation.tags?.join("/") || "";
-        const summary = operation.summary || path;
-        const sourceName = tags
-          ? `${apiTitle} - ${tags} - ${summary}`
-          : `${apiTitle} - ${summary}`;
+      const tags = operation.tags?.join("/") || "";
+      const summary = operation.summary || apiPath;
+      const sourceName = tags
+        ? `${apiTitle} - ${tags} - ${summary}`
+        : `${apiTitle} - ${summary}`;
 
-        chunks.push({
-          id: `openapi_${fileHash}_${hash(path + method)}`,
-          text: endpointText,
-          source: sourceName,
-          url: `${apiUrl}#${operation.operationId || ""}`,
-        });
-      }
+      chunks.push({
+        id: `openapi_${fileHash}_${hashString(apiPath + method, 8)}`,
+        text: endpointText,
+        source: sourceName,
+        url: `${apiUrl}#${operation.operationId || ""}`,
+      });
     }
   }
 
   return chunks;
 }
 
-/**
- * Builds a text description of an endpoint
- * Optimized for semantic search by front-loading important keywords
- */
 function buildEndpointText(
   method: string,
-  path: string,
+  apiPath: string,
   operation: Operation,
   apiTitle: string
 ): string {
-  const lines: string[] = [];
+  const lines: string[] = [`# ${apiTitle}`];
 
-  lines.push(`# ${apiTitle}`);
-  if (operation.summary) {
-    lines.push(`## ${operation.summary}`);
-  }
-
-  if (operation.tags && operation.tags.length > 0) {
+  if (operation.summary) lines.push(`## ${operation.summary}`);
+  if (operation.tags?.length)
     lines.push(`Category: ${operation.tags.join(", ")}`);
-  }
 
-  lines.push("");
-  lines.push(`**Endpoint:** \`${method} ${path}\``);
-  lines.push("");
+  lines.push("", `**Endpoint:** \`${method} ${apiPath}\``, "");
 
   if (operation.description) {
-    const cleanDesc = operation.description
-      .replace(/\\r\\n/g, "\n")
-      .replace(/\r\n/g, "\n");
-    lines.push(cleanDesc);
-    lines.push("");
+    lines.push(
+      operation.description.replace(/\\r\\n/g, "\n").replace(/\r\n/g, "\n"),
+      ""
+    );
   }
 
-  if (operation.parameters && operation.parameters.length > 0) {
+  if (operation.parameters?.length) {
     lines.push("### Parameters");
     for (const param of operation.parameters) {
       const required = param.required ? "(required)" : "(optional)";
-      const desc = param.description || "No description";
-      lines.push(`- **${param.name}** [${param.in}] ${required}: ${desc}`);
+      lines.push(
+        `- **${param.name}** [${param.in}] ${required}: ${
+          param.description || "No description"
+        }`
+      );
     }
     lines.push("");
   }
 
   if (operation.requestBody?.description) {
-    lines.push("### Request Body");
-    lines.push(operation.requestBody.description);
-    lines.push("");
+    lines.push("### Request Body", operation.requestBody.description, "");
   }
 
   if (operation.responses) {
@@ -285,16 +249,64 @@ function buildEndpointText(
   return lines.join("\n");
 }
 
-// ============================================================================
-// Main
-// ============================================================================
+async function processSpec(
+  filename: string,
+  config: OpenAPIConfig,
+  cache: Cache,
+  force: boolean
+): Promise<ProcessResult> {
+  try {
+    const result = await fetchSpec(filename, config);
+    if (!result)
+      return {
+        filename,
+        chunks: [],
+        cached: false,
+        isNew: false,
+        error: "failed to fetch",
+      };
 
-async function main() {
+    const { spec, raw } = result;
+    const contentHash = hashContent(raw);
+
+    if (
+      shouldUseCache(
+        cache,
+        filename,
+        contentHash,
+        DEFAULT_CACHE_TTL_DAYS,
+        force
+      )
+    ) {
+      return { filename, chunks: [], cached: true, isNew: false };
+    }
+
+    const isNew = !cache[filename];
+    const chunks = extractChunks(spec, filename, config);
+    updateCacheEntry(cache, filename, contentHash);
+
+    return { filename, chunks, cached: false, isNew };
+  } catch (error) {
+    return {
+      filename,
+      chunks: [],
+      cached: false,
+      isNew: false,
+      error: error instanceof Error ? error.message : String(error),
+    };
+  }
+}
+
+async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry-run");
   const force = args.includes("--force");
   const filterArg = args.find((a) => a.startsWith("--filter="));
   const filter = filterArg?.split("=")[1]?.toLowerCase();
+  const concurrencyArg = args.find((a) => a.startsWith("--concurrency="));
+  const concurrency = concurrencyArg
+    ? parseInt(concurrencyArg.split("=")[1], 10)
+    : DEFAULT_CONCURRENCY;
 
   const config = loadConfig();
   const cache = loadCache(CACHE_PATH);
@@ -304,6 +316,7 @@ async function main() {
   console.log(`   Repo: ${config.githubRepo}`);
   console.log(`   Branch: ${config.branch}`);
   console.log(`   Docs URL: ${config.docsBaseUrl}`);
+  console.log(`   Concurrency: ${concurrency}`);
   if (filter) console.log(`   Filter: *${filter}*`);
   if (dryRun) console.log(`   Mode: DRY RUN`);
   if (force) console.log(`   Mode: FORCE (ignoring cache)`);
@@ -320,53 +333,55 @@ async function main() {
   if (dryRun) {
     console.log("\n📝 Schemas that would be processed:\n");
     for (const file of files) {
-      const cached = cache[file];
-      const status = cached ? "📦 cached" : "🆕 new";
-      console.log(`   - ${file} (${status})`);
+      console.log(`   - ${file} (${cache[file] ? "📦 cached" : "🆕 new"})`);
     }
     console.log("\n✅ Dry run complete.\n");
     return;
   }
+
+  console.log(
+    `\n🚀 Processing ${files.length} schemas (${concurrency} concurrent)...\n`
+  );
+
+  const results = await processConcurrent(
+    files,
+    async (filename) => processSpec(filename, config, cache, force),
+    {
+      concurrency,
+      rateLimitMs: DEFAULT_RATE_LIMIT_MS,
+      onProgress: (completed, total) => {
+        process.stdout.write(
+          `\r   Progress: ${completed}/${total} (${Math.round(
+            (completed / total) * 100
+          )}%)`
+        );
+      },
+    }
+  );
+
+  console.log("\n");
 
   const allChunks: ChunkDoc[] = [];
   let processed = 0;
   let skipped = 0;
   let cached = 0;
 
-  console.log("\n📥 Processing schemas...\n");
-
-  for (const file of files) {
-    process.stdout.write(`   ${file}... `);
-
-    const result = await fetchSpec(file, config);
-    if (!result) {
-      console.log("❌ failed to fetch");
-      skipped++;
-      continue;
-    }
-
-    const { spec, raw } = result;
-    const contentHash = hashContent(raw);
-
-    if (
-      shouldUseCache(cache, file, contentHash, DEFAULT_CACHE_TTL_DAYS, force)
-    ) {
-      console.log("📦 unchanged (cached)");
+  for (const result of results) {
+    if (result.cached) {
+      console.log(`   📦 ${result.filename} - cached`);
       cached++;
-      continue;
+    } else if (result.error) {
+      console.log(`   ❌ ${result.filename} - ${result.error}`);
+      skipped++;
+    } else if (result.chunks.length > 0) {
+      console.log(
+        `   ${result.isNew ? "🆕" : "🔄"} ${result.filename} - ${
+          result.chunks.length
+        } chunks`
+      );
+      allChunks.push(...result.chunks);
+      processed++;
     }
-
-    const isNew = !cache[file];
-    const chunks = extractChunks(spec, file, config);
-    allChunks.push(...chunks);
-
-    updateCacheEntry(cache, file, contentHash);
-
-    const status = isNew ? "🆕" : "🔄";
-    console.log(`${status} ${chunks.length} chunks`);
-    processed++;
-
-    await new Promise((r) => setTimeout(r, 100));
   }
 
   saveCache(CACHE_PATH, cache);
@@ -380,8 +395,9 @@ async function main() {
 
     for (let i = 0; i < allChunks.length; i += BATCH_SIZE) {
       const batch = allChunks.slice(i, i + BATCH_SIZE);
-      const batchNum = Math.floor(i / BATCH_SIZE) + 1;
-      process.stdout.write(`   Batch ${batchNum}/${batches}...`);
+      process.stdout.write(
+        `   Batch ${Math.floor(i / BATCH_SIZE) + 1}/${batches}...`
+      );
       await upsertDocs(batch);
       console.log(" ✅");
     }

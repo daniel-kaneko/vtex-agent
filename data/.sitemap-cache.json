@@ -1,0 +1,1898 @@
+{
+  "https://developers.vtex.com/docs/app-development": {
+    "hash": "155a0b5082111a965ae494d68aae5a3a",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/docs/guides": {
+    "hash": "58a4886555502cd1512d1585f77f0bca",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/docs/guides/code-samples": {
+    "hash": "e133517bed24bf929fdd4aeaab84e1b5",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/docs/storefront-development": {
+    "hash": "83bdaec921f0a45119b97171fa17fc52",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting": {
+    "hash": "a02edb96de3c10a076aa52e3d6ba69b0",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/docs/vtex-io-apps": {
+    "hash": "77c24f56c9a0b3b0c33b0eaaa2144779",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/updates/documentation-updates": {
+    "hash": "bcd5e741abefd6e89d2e901d65fda173",
+    "lastUpdated": "2025-12-12T11:38:33.225Z"
+  },
+  "https://developers.vtex.com/updates/release-notes": {
+    "hash": "3f7a8812b5be9d799e7bc03ae0d92433",
+    "lastUpdated": "2025-12-12T11:38:34.108Z"
+  },
+  "https://developers.vtex.com/docs/apps/vtex.store-components/ShippingSimulator": {
+    "hash": "c49d24c9b6a66116ed4dded1f8fbf9bb",
+    "lastUpdated": "2025-12-12T11:38:34.108Z"
+  },
+  "https://developers.vtex.com/docs/apps/vtex.add-to-cart-button": {
+    "hash": "fad86594efe7d6b0d492f92ec32129bd",
+    "lastUpdated": "2025-12-12T11:38:34.108Z"
+  },
+  "https://developers.vtex.com/docs/apps/vtex.search": {
+    "hash": "3a416d2111bb1b596595e4db88e0dd51",
+    "lastUpdated": "2025-12-12T11:38:34.821Z"
+  },
+  "https://developers.vtex.com/docs/apps/vtex.rich-text": {
+    "hash": "f04493f242c10289266903339e345397",
+    "lastUpdated": "2025-12-12T11:38:34.821Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-update-the-ean-of-my-skus-via-api": {
+    "hash": "e00e01c12cf7ad7fee13758bcdae2b1f",
+    "lastUpdated": "2025-12-12T11:38:34.821Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-am-getting-500-errors-in-vtex-io-cli": {
+    "hash": "a02174df399c9f7359496d6937ef299c",
+    "lastUpdated": "2025-12-12T11:38:34.822Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-am-getting-errors-with-my-service-configuration-app": {
+    "hash": "04cb61cc7c125c647067f313d3198f1b",
+    "lastUpdated": "2025-12-12T11:38:34.822Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-create-a-new-workspace": {
+    "hash": "dce08b22868f2f574cd3a73d1617a5c3",
+    "lastUpdated": "2025-12-12T11:38:34.822Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-install-an-app-with-a-major-other-than-0x": {
+    "hash": "dfa8685521d03ce6598934f2c5387bee",
+    "lastUpdated": "2025-12-12T11:38:35.617Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-install-the-headless-cms-plugins-in-my-account": {
+    "hash": "b05a78dd905881ef7dd8de33aa82cb43",
+    "lastUpdated": "2025-12-12T11:38:35.617Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-install-vtex-io-cli": {
+    "hash": "88c2cc009aebfdf2e19d6bf76902d050",
+    "lastUpdated": "2025-12-12T11:38:35.617Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-integrate-my-external-search-provider": {
+    "hash": "1c176b629e28718bcf57bac1f9ba5324",
+    "lastUpdated": "2025-12-12T11:38:35.617Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-dont-see-my-store-theme-changes": {
+    "hash": "be26b934bc9b97648eb79e9d9e14b338",
+    "lastUpdated": "2025-12-12T11:38:35.617Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/issues-during-extending-the-faststore-api-schema": {
+    "hash": "921e25d93fa58d7c7226dfac31f58dc0",
+    "lastUpdated": "2025-12-12T11:38:36.344Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/modal-layout-closes-when-i-click-a-sku": {
+    "hash": "6b108c99f64309d49f0bed1c2c818383",
+    "lastUpdated": "2025-12-12T11:38:36.344Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-multi-language-store-is-not-working-in-the-development-workspace": {
+    "hash": "ddd9984923eab0bd52982933f6bda378",
+    "lastUpdated": "2025-12-12T11:38:36.344Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-pages-are-taking-too-long-to-be-published-on-headless-cms": {
+    "hash": "421e312236a28ffdd887842f09b20762",
+    "lastUpdated": "2025-12-12T11:38:36.344Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-store-catalog-does-not-show-the-price-range-filter": {
+    "hash": "abfac33531816ed8c9ad50ad4f222668",
+    "lastUpdated": "2025-12-12T11:38:36.344Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-store-does-not-reflect-the-overrides-i-created": {
+    "hash": "5ca0ee453ea28798ac0fc872a0017425",
+    "lastUpdated": "2025-12-12T11:38:37.105Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/the-price-in-the-shelf-or-in-the-search-results-is-different-from-the-product-page": {
+    "hash": "df3b925343c7005bf4f96ee87acb6802",
+    "lastUpdated": "2025-12-12T11:38:37.105Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/the-promotion-highlight-flag-does-not-appear-on-the-product": {
+    "hash": "0860c59f33a62ab256c650afea032e09",
+    "lastUpdated": "2025-12-12T11:38:37.105Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/unable-to-access-headless-cms": {
+    "hash": "b4597b4779cf144bb15100e2697e811b",
+    "lastUpdated": "2025-12-12T11:38:37.105Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/vtex-release-cli-command-returns-ebadf-message": {
+    "hash": "71f7549b6dd7205495b8b3611649bd85",
+    "lastUpdated": "2025-12-12T11:38:37.105Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/google-analytics-4-is-tracking-inconsistent-data-from-my-store": {
+    "hash": "aa84515ecf0731c4d8c4b4a9bef2393a",
+    "lastUpdated": "2025-12-12T11:38:37.105Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/i-cant-complete-a-purchase-on-a-faststore-website": {
+    "hash": "8b9544966c6b3fdf3260443a5859595c",
+    "lastUpdated": "2025-12-12T11:38:37.853Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-routes-are-not-behaving-as-expected": {
+    "hash": "86aca6b5d5c3cffa43047e1ac810610a",
+    "lastUpdated": "2025-12-12T11:38:37.853Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-store-is-presenting-price-inconsistencies": {
+    "hash": "673ffa1a3517c7be4555ef0f1e9039f3",
+    "lastUpdated": "2025-12-12T11:38:37.853Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-store-is-slow-or-unavailable": {
+    "hash": "540b9d9247c5f125035c321fa42a49e3",
+    "lastUpdated": "2025-12-12T11:38:37.853Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/my-store-translation-is-not-behaving-as-expected": {
+    "hash": "36c66f0e07b2de0ee117106a60ae4be7",
+    "lastUpdated": "2025-12-12T11:38:37.853Z"
+  },
+  "https://developers.vtex.com/docs/troubleshooting/utms-are-not-being-applied-to-the-cart-at-checkout": {
+    "hash": "0fe0b0c16c8e322fadb1b9cfffaf8cd5",
+    "lastUpdated": "2025-12-12T11:38:38.602Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-badge": {
+    "hash": "53576f942599ad16dd122f6dbd8b7522",
+    "lastUpdated": "2025-12-12T11:38:38.602Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-button": {
+    "hash": "2eaefface4d8783ca44a7c27e8347266",
+    "lastUpdated": "2025-12-12T11:38:39.414Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-checkbox": {
+    "hash": "9c470ada474df845ed318ebe73a26410",
+    "lastUpdated": "2025-12-12T11:38:40.193Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-icon": {
+    "hash": "1e3d9709ee8e8e9172a996427682a4c9",
+    "lastUpdated": "2025-12-12T11:38:40.193Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-input": {
+    "hash": "0ed4a313d5134a920164ab5e47e6c8d6",
+    "lastUpdated": "2025-12-12T11:38:40.193Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-label": {
+    "hash": "2638a81a066e5ee16bb3a603e35c9f65",
+    "lastUpdated": "2025-12-12T11:38:40.193Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-link": {
+    "hash": "758e8cdfb69ad7eb83f94a89881da3f0",
+    "lastUpdated": "2025-12-12T11:38:40.193Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-list": {
+    "hash": "5dd4c91bfad3e5f484fd0e941ab9f4eb",
+    "lastUpdated": "2025-12-12T11:38:40.938Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-loader": {
+    "hash": "4ec9d493961ad05247ae41334c5fcef1",
+    "lastUpdated": "2025-12-12T11:38:40.938Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-overlay": {
+    "hash": "39e6678551548b5966b914e350a57687",
+    "lastUpdated": "2025-12-12T11:38:40.938Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-overview": {
+    "hash": "316aa7386d6de7c2077faaf5425eeb31",
+    "lastUpdated": "2025-12-12T11:38:40.938Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/atoms-price": {
+    "hash": "6d8d00aabed8d6753273a3f06d6f08a6",
+    "lastUpdated": "2025-12-12T11:38:40.938Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/developer-tools-updating-the-cli-package-version": {
+    "hash": "f626816a83335461ea25061617b8b821",
+    "lastUpdated": "2025-12-12T11:38:42.042Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/developing-and-overriding-components-creating-a-new-section": {
+    "hash": "6e0d10312b9a85d028b9fa2cd4779d3d",
+    "lastUpdated": "2025-12-12T11:38:42.042Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/developing-and-overriding-components-experimental-exports-hooks-and-components": {
+    "hash": "ba8c84f7e005fe5d152ed648eef2a682",
+    "lastUpdated": "2025-12-12T11:38:42.927Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/developing-and-overriding-components-list-of-native-sections": {
+    "hash": "9974b959d01c50fbc659fe9c3e256260",
+    "lastUpdated": "2025-12-12T11:38:44.543Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/override-use-cases-adding-an-image-to-the-alert-component": {
+    "hash": "dd24153625fac734b691468984bfde09",
+    "lastUpdated": "2025-12-12T11:38:45.368Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/override-use-cases-adding-more-icon-options-to-the-alert-component": {
+    "hash": "82875afc1aeac3ba50eca0369c83f19b",
+    "lastUpdated": "2025-12-12T11:38:45.368Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/override-use-cases-overview": {
+    "hash": "54d1b0d9f27a72cbd25b052770b8a008",
+    "lastUpdated": "2025-12-12T11:38:45.368Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-component-props": {
+    "hash": "a197c24e9ab5a312d39fed6c423f374c",
+    "lastUpdated": "2025-12-12T11:38:45.368Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-components-and-props-v1": {
+    "hash": "f2097958c5c749909448d805eb56183f",
+    "lastUpdated": "2025-12-12T11:38:46.091Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-getoverriddensection-function": {
+    "hash": "52f02d8e9495eb09f3924d81fecb83f8",
+    "lastUpdated": "2025-12-12T11:38:46.091Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-migrating-v1-to-v2": {
+    "hash": "7298992cb3e27578d5b908e81f3171a4",
+    "lastUpdated": "2025-12-12T11:38:46.091Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-native-component": {
+    "hash": "1ce9b97f0a8d6554eac2847385c463d9",
+    "lastUpdated": "2025-12-12T11:38:46.670Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-overview": {
+    "hash": "162b8b7b3c1965819c67c7c8c86a51ec",
+    "lastUpdated": "2025-12-12T11:38:46.670Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-section-styles": {
+    "hash": "b1d9e193bf4b5b3fe6af1a4582f6231e",
+    "lastUpdated": "2025-12-12T11:38:46.670Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/overrides-syncing-components-with-the-headless-cms": {
+    "hash": "171fdeeeb670421b5a7ea183dbed88b1",
+    "lastUpdated": "2025-12-12T11:38:46.670Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/developing-and-overriding-components-overview": {
+    "hash": "61b33b1698225c4876ef2c150e0769d7",
+    "lastUpdated": "2025-12-12T11:38:46.670Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/faststore-api-configuring-graphql-cache-control": {
+    "hash": "4ba033520acd2f9a51b08690331212f6",
+    "lastUpdated": "2025-12-12T11:38:46.670Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/faststore-api-overview": {
+    "hash": "8dbe95b178e3e3b74223540aa171e567",
+    "lastUpdated": "2025-12-12T11:38:47.303Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/schema-enums": {
+    "hash": "933ac21f1f87903066c9cef6fff4aa27",
+    "lastUpdated": "2025-12-12T11:38:47.303Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/schema-inputs": {
+    "hash": "f46595e19dae495195d1e3273e7ea7d6",
+    "lastUpdated": "2025-12-12T11:38:47.303Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/schema-mutations": {
+    "hash": "435f7cd7d93ca673ad1dc57c531bfa89",
+    "lastUpdated": "2025-12-12T11:38:47.303Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/schema-objects": {
+    "hash": "c5df88b6011db4ec397e1ff9edfc7ccd",
+    "lastUpdated": "2025-12-12T11:38:48.921Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/schema-queries": {
+    "hash": "e3bf07e050b08d7cc2b620d2955ca039",
+    "lastUpdated": "2025-12-12T11:38:48.921Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/schema-scalars": {
+    "hash": "858258c830e9b0c77a3e5630632bb350",
+    "lastUpdated": "2025-12-12T11:38:48.921Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-1-setting-up-your-environment": {
+    "hash": "c7395a982e3f212d19fd658cf36b6eee",
+    "lastUpdated": "2025-12-12T11:38:48.921Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-2-starting-the-project": {
+    "hash": "ef017779c7e2d22e1c0ca7f880886a01",
+    "lastUpdated": "2025-12-12T11:38:49.748Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-3-running-the-project-locally": {
+    "hash": "9e337aa59a4e99f6b778e876100a3387",
+    "lastUpdated": "2025-12-12T11:38:49.748Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-4-understanding-the-project-structure": {
+    "hash": "952362bc1039ab18ce6dcf30e06d897b",
+    "lastUpdated": "2025-12-12T11:38:50.533Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-5-integrating-your-project-with-the-headless-cms": {
+    "hash": "1d4b61d7bddae7592259f43faedd0a27",
+    "lastUpdated": "2025-12-12T11:38:50.533Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-6-next-steps": {
+    "hash": "fe9c3af3e1c33d31d4d9633dd161d4eb",
+    "lastUpdated": "2025-12-12T11:38:50.533Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-faststore-v1-to-v3": {
+    "hash": "2dac0f155bdbbaebc2370ceebe9dd33d",
+    "lastUpdated": "2025-12-12T11:38:51.273Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-faststore-v2-to-v3": {
+    "hash": "8ef3ded4ae7b2d2048ec2877a274d8b0",
+    "lastUpdated": "2025-12-12T11:38:51.273Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-faststore-versions-and-support-levels": {
+    "hash": "ef216926fcd2247857d619e5cbefa41c",
+    "lastUpdated": "2025-12-12T11:38:51.273Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-glossary": {
+    "hash": "fefddbb4ddc22f1f7070775a38f20807",
+    "lastUpdated": "2025-12-12T11:38:51.273Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-overview": {
+    "hash": "df32e2632ac23c95d15d61844071d680",
+    "lastUpdated": "2025-12-12T11:38:51.273Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-promoting-your-headless-cms-changes": {
+    "hash": "c994674fab5a59d59b21bf03cdc71dc2",
+    "lastUpdated": "2025-12-12T11:38:52.044Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-setting-up-the-headless-cms": {
+    "hash": "520f5018b2b4a3d7b963a5fc869ab29b",
+    "lastUpdated": "2025-12-12T11:38:52.044Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/getting-started-structuring-content-types-and-sections": {
+    "hash": "e2fc972af55e0574624ab6fe3441df5e",
+    "lastUpdated": "2025-12-12T11:38:52.044Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/webops-configuring-production-and-preview-branches": {
+    "hash": "3a46c85e6c9e15a2a6bc2bdad0e74667",
+    "lastUpdated": "2025-12-12T11:38:52.827Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/webops-dashboard": {
+    "hash": "3a39bdbcff00293c9fc3225483d01ede",
+    "lastUpdated": "2025-12-12T11:38:53.543Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/webops-managing-secrets": {
+    "hash": "2f44343dcc8ecaf4cfab5b13c1947515",
+    "lastUpdated": "2025-12-12T11:38:53.544Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/webops-overview": {
+    "hash": "11fbeacf106691a531c66435823ed6e8",
+    "lastUpdated": "2025-12-12T11:38:53.544Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/go-live-1-configuring-external-dns": {
+    "hash": "14b7eb5a4d83e298b69c0ae54ec53b49",
+    "lastUpdated": "2025-12-12T11:38:54.317Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/go-live-2-integrating-the-vtex-login": {
+    "hash": "73cf9e9815d04bcf4a3a9d6c8d13e070",
+    "lastUpdated": "2025-12-12T11:38:54.317Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/go-live-3-integrating-the-vtex-checkout": {
+    "hash": "f98bf570cf324dc86eff208d29b89cfb",
+    "lastUpdated": "2025-12-12T11:38:54.317Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/go-live-4-integrating-the-vtex-order-placed-and-my-account": {
+    "hash": "9c708b68d9f9264b1d60d2a242f0d31c",
+    "lastUpdated": "2025-12-12T11:38:55.227Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/go-live-before-you-begin": {
+    "hash": "189c916b5228f21c0bc12b2f5bc7b3dc",
+    "lastUpdated": "2025-12-12T11:38:55.227Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/go-live-overview": {
+    "hash": "a32559b7f62fa8c79e5323faa9a6ed8a",
+    "lastUpdated": "2025-12-12T11:38:55.227Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/dynamic-content-overview": {
+    "hash": "894e4537c9f932321756e42c303d3633",
+    "lastUpdated": "2025-12-12T11:38:55.227Z"
+  },
+  "https://developers.vtex.com/docs/guides/faststore/dynamic-content-step-1-setting-up-the-store-code-for-dynamic-content": {
+    "hash": "fdedf5aa93a25f495d86daf69d84aa2a",
+    "lastUpdated": "2025-12-12T11:38:55.986Z"
+  },
+  "https://developers.vtex.com/docs/guides/get-sellers-by-region-or-address": {
+    "hash": "ee527e701ed1c7861dbd39fd1d24d837",
+    "lastUpdated": "2025-12-12T11:38:56.581Z"
+  },
+  "https://developers.vtex.com/docs/guides/security": {
+    "hash": "0781b7eb493f9b007acf901deed44a75",
+    "lastUpdated": "2025-12-12T11:38:57.299Z"
+  },
+  "https://developers.vtex.com/docs/guides/ssltls-security-protocols-and-ciphers-at-checkout": {
+    "hash": "d833bd189053ba6eab5402350d2140ee",
+    "lastUpdated": "2025-12-12T11:38:57.299Z"
+  },
+  "https://developers.vtex.com/docs/guides/shopping-cart-section-api-quick-start-guides": {
+    "hash": "e4edd7fa0d6f998d399367a3c697591a",
+    "lastUpdated": "2025-12-12T11:38:57.299Z"
+  },
+  "https://developers.vtex.com/docs/guides/add-cart-items": {
+    "hash": "dc4f07dc00d60e4a92f8a07a1a8cff65",
+    "lastUpdated": "2025-12-12T11:38:57.299Z"
+  },
+  "https://developers.vtex.com/docs/guides/add-coupons-to-the-cart": {
+    "hash": "519978e66b2c4320a0883128e664df96",
+    "lastUpdated": "2025-12-12T11:38:58.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/add-service-to-the-cart": {
+    "hash": "5052e82a67e6365364628259f35d1b54",
+    "lastUpdated": "2025-12-12T11:38:58.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/change-price": {
+    "hash": "226ec24e732ef017a6bb33767b62b6fd",
+    "lastUpdated": "2025-12-12T11:38:58.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/create-a-new-cart": {
+    "hash": "2afea3935f00d2f5b66c27b402190fad",
+    "lastUpdated": "2025-12-12T11:38:58.113Z"
+  },
+  "https://developers.vtex.com/docs/guides/get-cart-information-by-id": {
+    "hash": "603fc37b9a69676247c91c51d67cfba3",
+    "lastUpdated": "2025-12-12T11:38:58.934Z"
+  },
+  "https://developers.vtex.com/docs/guides/get-cart-installments-information": {
+    "hash": "a648263e2dab2bec4e56128b27c4c59e",
+    "lastUpdated": "2025-12-12T11:38:58.934Z"
+  },
+  "https://developers.vtex.com/docs/guides/ignore-profile-data": {
+    "hash": "c47aa012457729ba4c2ac9300bbd68f6",
+    "lastUpdated": "2025-12-12T11:38:58.934Z"
+  },
+  "https://developers.vtex.com/docs/guides/remove-all-items-from-cart": {
+    "hash": "f8f289147fb28e2baba7c734ba92846e",
+    "lastUpdated": "2025-12-12T11:38:59.709Z"
+  },
+  "https://developers.vtex.com/docs/guides/remove-all-personal-data": {
+    "hash": "0c2def0af6c112091008650f3ded3578",
+    "lastUpdated": "2025-12-12T11:38:59.709Z"
+  },
+  "https://developers.vtex.com/docs/guides/simulate-a-shopping-cart": {
+    "hash": "cf550dff4dd053a6165b31a19674b9a3",
+    "lastUpdated": "2025-12-12T11:38:59.709Z"
+  },
+  "https://developers.vtex.com/docs/guides/update-cart-items": {
+    "hash": "4490941df9cc6bc57360a0dfaae72abc",
+    "lastUpdated": "2025-12-12T11:38:59.709Z"
+  },
+  "https://developers.vtex.com/docs/guides/change-orders-multilevel-omnichannel-inventory-external-marketplaces": {
+    "hash": "61ce2e45dc714ae1d80d626cdf913056",
+    "lastUpdated": "2025-12-12T11:39:00.535Z"
+  },
+  "https://developers.vtex.com/docs/guides/multilevel-omnichannel-inventory-api-integration": {
+    "hash": "460db8ef80252256ced465e629f8c33e",
+    "lastUpdated": "2025-12-12T11:39:00.535Z"
+  },
+  "https://developers.vtex.com/docs/guides/multilevel-omnichannel-inventory": {
+    "hash": "ae068173e7f69a7eca98bef3add34e82",
+    "lastUpdated": "2025-12-12T11:39:01.258Z"
+  },
+  "https://developers.vtex.com/docs/guides/setting-up-white-label-seller-as-pickup-point": {
+    "hash": "e37c8f4c7601e2e15d054a148cd02bdb",
+    "lastUpdated": "2025-12-12T11:39:01.966Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-pick-and-pack-carriers-integration-protocol": {
+    "hash": "9c7baf13d86d718173837bda20b69434",
+    "lastUpdated": "2025-12-12T11:39:03.933Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-pick-and-pack-get-order-status-and-information-api": {
+    "hash": "eb85839833984e28431eee41dcec4ce4",
+    "lastUpdated": "2025-12-12T11:39:03.933Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-pick-and-pack": {
+    "hash": "aa199f247e343466bb35ebd5da5402df",
+    "lastUpdated": "2025-12-12T11:39:03.933Z"
+  },
+  "https://developers.vtex.com/docs/guides/getting-started-with-vtex-io-for-vtex-shipping-network": {
+    "hash": "d6a2f9f4b17a066b496f010e3a3925d0",
+    "lastUpdated": "2025-12-12T11:39:04.794Z"
+  },
+  "https://developers.vtex.com/docs/guides/integration-flow": {
+    "hash": "e233360a9fd21fe99c0c17a01562b75d",
+    "lastUpdated": "2025-12-12T11:39:04.794Z"
+  },
+  "https://developers.vtex.com/docs/guides/notification-1": {
+    "hash": "335c7382d6570555d5ced4d82c1ed8ab",
+    "lastUpdated": "2025-12-12T11:39:04.794Z"
+  },
+  "https://developers.vtex.com/docs/guides/tracking-1": {
+    "hash": "f2f018155e9a64f91da646cf41c44a50",
+    "lastUpdated": "2025-12-12T11:39:04.794Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-shipping-network-labels-integration": {
+    "hash": "524fec6c9cb7ac5fd220f6361f924617",
+    "lastUpdated": "2025-12-12T11:39:05.901Z"
+  },
+  "https://developers.vtex.com/docs/guides/integrate-external-orders-vtex-tracking": {
+    "hash": "5bc00e8a97e4a215829587e4854d48ce",
+    "lastUpdated": "2025-12-12T11:39:05.901Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-tracking": {
+    "hash": "bcfe149a5a88ce8193b738eb54f41599",
+    "lastUpdated": "2025-12-12T11:39:05.901Z"
+  },
+  "https://developers.vtex.com/docs/guides/api-response-codes": {
+    "hash": "88f918dadd9f6de9724824f30711e616",
+    "lastUpdated": "2025-12-12T11:39:05.901Z"
+  },
+  "https://developers.vtex.com/docs/guides/api-authentication-using-api-keys": {
+    "hash": "c8238a1420ebc5183df3b3e9260f72df",
+    "lastUpdated": "2025-12-12T11:39:05.901Z"
+  },
+  "https://developers.vtex.com/docs/guides/api-authentication-using-user-tokens": {
+    "hash": "a9f5e6e6bed55a55ac52fdd9106adebf",
+    "lastUpdated": "2025-12-12T11:39:06.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/app-authentication-using-auth-tokens": {
+    "hash": "c883dac998d91d80ff6dce3a37ae7d7d",
+    "lastUpdated": "2025-12-12T11:39:06.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/authentication": {
+    "hash": "9dfb8e7a87a031e5050941d3a158aabf",
+    "lastUpdated": "2025-12-12T11:39:06.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/checking-which-user-is-currently-authenticated": {
+    "hash": "cd4f5557c3e8a7645e9f730c748f2276",
+    "lastUpdated": "2025-12-12T11:39:06.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/expiring-a-shoppers-password": {
+    "hash": "34c793f91ef8899e57237885be6d88d7",
+    "lastUpdated": "2025-12-12T11:39:06.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/refresh-token-flow-for-headless-implementations": {
+    "hash": "0738176cc974c36f89ca1d0a5b4c80af",
+    "lastUpdated": "2025-12-12T11:39:07.482Z"
+  },
+  "https://developers.vtex.com/docs/guides/rotating-vtex-api-tokens": {
+    "hash": "4c395aeafb7c183ecc6d3f4fcf06dce1",
+    "lastUpdated": "2025-12-12T11:39:07.482Z"
+  },
+  "https://developers.vtex.com/docs/guides/best-practices-for-avoiding-rate-limit-errors": {
+    "hash": "5c562035960dcbfa8a12304f1977db3c",
+    "lastUpdated": "2025-12-12T11:39:08.322Z"
+  },
+  "https://developers.vtex.com/docs/guides/catalog-overview": {
+    "hash": "d47394cc7ba76efe7e4821afe3da2abe",
+    "lastUpdated": "2025-12-12T11:39:08.322Z"
+  },
+  "https://developers.vtex.com/docs/guides/checkout-overview": {
+    "hash": "13e88c143c63e585326c86dacb2ba262",
+    "lastUpdated": "2025-12-12T11:39:08.820Z"
+  },
+  "https://developers.vtex.com/docs/guides/fulfillment": {
+    "hash": "d55d1b6dd0cfc982c5de28124e2feb00",
+    "lastUpdated": "2025-12-12T11:39:09.530Z"
+  },
+  "https://developers.vtex.com/docs/guides/api-usage": {
+    "hash": "8499d9435003423721bc2c1c0c010a29",
+    "lastUpdated": "2025-12-12T11:39:09.530Z"
+  },
+  "https://developers.vtex.com/docs/guides/getting-started-list-of-rest-apis": {
+    "hash": "a54819e3d1afeb2aac79a53cced4a7af",
+    "lastUpdated": "2025-12-12T11:39:09.530Z"
+  },
+  "https://developers.vtex.com/docs/guides/getting-started": {
+    "hash": "95528e0e3369d3ea533bc747a87022b3",
+    "lastUpdated": "2025-12-12T11:39:09.530Z"
+  },
+  "https://developers.vtex.com/docs/guides/making-your-first-request": {
+    "hash": "55ad9197e2c6548dd5fdcbd99b88f69e",
+    "lastUpdated": "2025-12-12T11:39:09.530Z"
+  },
+  "https://developers.vtex.com/docs/guides/handling-errors-and-exceptions": {
+    "hash": "5a544913313928fe26d5da4e212a6f14",
+    "lastUpdated": "2025-12-12T11:39:10.172Z"
+  },
+  "https://developers.vtex.com/docs/guides/marketplace-overview": {
+    "hash": "f559e7a3609d5482e3cb79db6ddeef6f",
+    "lastUpdated": "2025-12-12T11:39:10.858Z"
+  },
+  "https://developers.vtex.com/docs/guides/punchout": {
+    "hash": "261fe1dfbbbf9a0bdba2bb44e7582e44",
+    "lastUpdated": "2025-12-12T11:39:11.523Z"
+  },
+  "https://developers.vtex.com/docs/guides/recaptcha": {
+    "hash": "e073ab62e1e6c2658e75db908699dab7",
+    "lastUpdated": "2025-12-12T11:39:11.524Z"
+  },
+  "https://developers.vtex.com/docs/guides/applicable-cases": {
+    "hash": "5df79eb0b32511e36bdc3a17a8f60fdd",
+    "lastUpdated": "2025-12-12T11:39:11.524Z"
+  },
+  "https://developers.vtex.com/docs/guides/implementing-recaptcha-in-integrations": {
+    "hash": "35b15e9d0adc7554ea63d20b0e0446b7",
+    "lastUpdated": "2025-12-12T11:39:12.336Z"
+  },
+  "https://developers.vtex.com/docs/guides/search-integration-guide": {
+    "hash": "869fa058832f29cfcd38e2ed49c415aa",
+    "lastUpdated": "2025-12-12T11:39:12.336Z"
+  },
+  "https://developers.vtex.com/docs/guides/external-search-provider-overview": {
+    "hash": "15351f2cd70a72a7a4870a448ff0af78",
+    "lastUpdated": "2025-12-12T11:39:12.336Z"
+  },
+  "https://developers.vtex.com/docs/guides/external-search-provider-recipe": {
+    "hash": "35ed090958871f0bbd17be59eef4f929",
+    "lastUpdated": "2025-12-12T11:39:12.336Z"
+  },
+  "https://developers.vtex.com/docs/guides/external-search-provider-reference": {
+    "hash": "2ee8e972aa514123e4e1ea19615af7a2",
+    "lastUpdated": "2025-12-12T11:39:12.336Z"
+  },
+  "https://developers.vtex.com/docs/guides/external-search-provider-specification": {
+    "hash": "ffc4d2a6a83e277cf117d9651e44970d",
+    "lastUpdated": "2025-12-12T11:39:13.013Z"
+  },
+  "https://developers.vtex.com/docs/guides/sent-offers-integration-guide-connectors": {
+    "hash": "f6b17f94d4f13711939dd6f6cda65cd1",
+    "lastUpdated": "2025-12-12T11:39:13.751Z"
+  },
+  "https://developers.vtex.com/docs/guides/offer-management-sdk": {
+    "hash": "caa0ddc00b8d135ba3730d9a327339b8",
+    "lastUpdated": "2025-12-12T11:39:14.479Z"
+  },
+  "https://developers.vtex.com/docs/guides/session-manager": {
+    "hash": "62041ce396d1ccccb8f08c2bf1711fe3",
+    "lastUpdated": "2025-12-12T11:39:14.479Z"
+  },
+  "https://developers.vtex.com/docs/guides/adding-telesales-impersonated-email-using-the-session-manager": {
+    "hash": "584b80be4e00dadae727752f2fb685f1",
+    "lastUpdated": "2025-12-12T11:39:14.480Z"
+  },
+  "https://developers.vtex.com/docs/guides/session-data-aggregation-create-and-transform-calls": {
+    "hash": "bc94fbec33450027c7baa61d3fd93551",
+    "lastUpdated": "2025-12-12T11:39:14.480Z"
+  },
+  "https://developers.vtex.com/docs/guides/session-data-available-from-vtex-apps": {
+    "hash": "7f0efed841aafcac9d68ebfc5b45dee3",
+    "lastUpdated": "2025-12-12T11:39:15.083Z"
+  },
+  "https://developers.vtex.com/docs/guides/tax-service-integration-guide": {
+    "hash": "fe84de09fcac4752b7bc9ec24af4217e",
+    "lastUpdated": "2025-12-12T11:39:15.083Z"
+  },
+  "https://developers.vtex.com/docs/guides/tax-protocol-graphql-api": {
+    "hash": "ed85bc0026ec8864d1adf25cc1510eb8",
+    "lastUpdated": "2025-12-12T11:39:15.083Z"
+  },
+  "https://developers.vtex.com/docs/guides/tax-services-overview": {
+    "hash": "6633364e37b458b9a181c2833131a37f",
+    "lastUpdated": "2025-12-12T11:39:15.083Z"
+  },
+  "https://developers.vtex.com/docs/guides/tax-services-recipe": {
+    "hash": "e8d9956c8dcfb5070604cb44fabf146d",
+    "lastUpdated": "2025-12-12T11:39:15.083Z"
+  },
+  "https://developers.vtex.com/docs/guides/tax-services-reference-implementation": {
+    "hash": "c8d2855836a811465b89cb9ca215091d",
+    "lastUpdated": "2025-12-12T11:39:15.083Z"
+  },
+  "https://developers.vtex.com/docs/guides/tax-services-specification": {
+    "hash": "6f8117ac075e3273a9db49fbd244129e",
+    "lastUpdated": "2025-12-12T11:39:15.895Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-shipping-network": {
+    "hash": "95abc44bd456f4daf577bb3e83cbb77f",
+    "lastUpdated": "2025-12-12T11:39:15.895Z"
+  },
+  "https://developers.vtex.com/docs/guides/delivery-promise": {
+    "hash": "44c1e64d1a5c649f5b6f7e81493bc762",
+    "lastUpdated": "2025-12-12T11:39:15.895Z"
+  },
+  "https://developers.vtex.com/docs/guides/logistics-api-overview": {
+    "hash": "172114a495e69f6c44e1b2f728ecd93a",
+    "lastUpdated": "2025-12-12T11:39:16.636Z"
+  },
+  "https://developers.vtex.com/docs/guides/marketplace-api-overview": {
+    "hash": "e837845facf70607caa0cd50d4285861",
+    "lastUpdated": "2025-12-12T11:39:16.636Z"
+  },
+  "https://developers.vtex.com/docs/guides/avoiding-cors-in-master-data-requests": {
+    "hash": "3f96b5390cee8827a2c567ce72ec3594",
+    "lastUpdated": "2025-12-12T11:39:16.636Z"
+  },
+  "https://developers.vtex.com/docs/guides/extracting-data-from-master-data-with-search-and-scroll": {
+    "hash": "223c7e847dee5e72cbba0425b814907a",
+    "lastUpdated": "2025-12-12T11:39:16.636Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-best-practices": {
+    "hash": "353f6c88de6553fac75a544bf3e0a449",
+    "lastUpdated": "2025-12-12T11:39:16.636Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-v2-basics": {
+    "hash": "a432882dbe04a06dff362617b2f7dac7",
+    "lastUpdated": "2025-12-12T11:39:16.636Z"
+  },
+  "https://developers.vtex.com/docs/guides/pagination-in-the-master-data-api": {
+    "hash": "fa4db8db7f4a508762555785cc95aabb",
+    "lastUpdated": "2025-12-12T11:39:17.354Z"
+  },
+  "https://developers.vtex.com/docs/guides/implementing-newsletter-opt-in-with-master-data-v1": {
+    "hash": "098065b9dfc7e6453160912fdc2777ac",
+    "lastUpdated": "2025-12-12T11:39:17.354Z"
+  },
+  "https://developers.vtex.com/docs/guides/interacting-with-master-data-v1-through-vtex-io-services": {
+    "hash": "b7b98ef34aa548be4b653f8d2df56bfb",
+    "lastUpdated": "2025-12-12T11:39:17.354Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-v1": {
+    "hash": "f15b1ee2e155ac2c05c4b3777eb16d06",
+    "lastUpdated": "2025-12-12T11:39:18.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/querying-documents-in-master-data-v1": {
+    "hash": "e693ef7301fca4a02d364a251f259ed8",
+    "lastUpdated": "2025-12-12T11:39:18.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/uploading-files-to-master-data-v1": {
+    "hash": "0cdc049cef5eed8f8e027557354c6074",
+    "lastUpdated": "2025-12-12T11:39:18.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/creating-relationships-between-data-entities-using-master-data-v2": {
+    "hash": "1b0e02bb271fc203e2cb2d3f11c6598f",
+    "lastUpdated": "2025-12-12T11:39:18.112Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-v2-document-saving-flow": {
+    "hash": "c9309d6a7b60f0facec3ae7696500b5e",
+    "lastUpdated": "2025-12-12T11:39:18.864Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-v2": {
+    "hash": "4f7e48382bc80e1112aaea505b39b582",
+    "lastUpdated": "2025-12-12T11:39:18.864Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-schema-lifecycle": {
+    "hash": "7f80f39fa7144c40ca5ff72922fbf5ae",
+    "lastUpdated": "2025-12-12T11:39:18.864Z"
+  },
+  "https://developers.vtex.com/docs/guides/working-with-json-schemas-in-master-data-v2": {
+    "hash": "32c93a70e6785ea74f54e769798ddf8d",
+    "lastUpdated": "2025-12-12T11:39:18.864Z"
+  },
+  "https://developers.vtex.com/docs/guides/searching-by-geocoordinates-in-master-data-v2": {
+    "hash": "349e5a2a7fcd69eeec473d837aa98744",
+    "lastUpdated": "2025-12-12T11:39:18.864Z"
+  },
+  "https://developers.vtex.com/docs/guides/setting-up-alternate-keys-in-master-data-v2": {
+    "hash": "5bd760dfeceedebc9602173456e4fb81",
+    "lastUpdated": "2025-12-12T11:39:18.864Z"
+  },
+  "https://developers.vtex.com/docs/guides/setting-up-an-auto-increment-field-in-master-data-v2": {
+    "hash": "fa3394bb93c107fd500b07564cafd1b6",
+    "lastUpdated": "2025-12-12T11:39:19.623Z"
+  },
+  "https://developers.vtex.com/docs/guides/sending-emails-with-triggers-on-master-data-v2": {
+    "hash": "6a582f9c781bf3769140770007525744",
+    "lastUpdated": "2025-12-12T11:39:19.623Z"
+  },
+  "https://developers.vtex.com/docs/guides/setting-up-triggers-on-master-data-v2": {
+    "hash": "78ff9813f04a4568a4536c11eb03f816",
+    "lastUpdated": "2025-12-12T11:39:19.623Z"
+  },
+  "https://developers.vtex.com/docs/guides/trigger-ab-test": {
+    "hash": "87b98a2a528882be7743f039187a962c",
+    "lastUpdated": "2025-12-12T11:39:19.623Z"
+  },
+  "https://developers.vtex.com/docs/guides/using-dynamic-expressions-on-master-data-v2": {
+    "hash": "3d70c68adcb4a26af69f7dbe3e500c18",
+    "lastUpdated": "2025-12-12T11:39:20.434Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data": {
+    "hash": "33377499ca7b0f42cb8ad4062693e460",
+    "lastUpdated": "2025-12-12T11:39:20.434Z"
+  },
+  "https://developers.vtex.com/docs/guides/data-consistency-and-synchronization-in-master-data": {
+    "hash": "23f74e5621617ee3c7644d6d04fb0ccf",
+    "lastUpdated": "2025-12-12T11:39:20.434Z"
+  },
+  "https://developers.vtex.com/docs/guides/master-data-api": {
+    "hash": "e351c5c6be9bfbdab8049eb6d348bebf",
+    "lastUpdated": "2025-12-12T11:39:20.434Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-segmenting-the-search-result": {
+    "hash": "bebbe3c8b7dd19afd360080c205efedf",
+    "lastUpdated": "2025-12-12T11:39:21.458Z"
+  },
+  "https://developers.vtex.com/docs/guides/storefront-permissions": {
+    "hash": "7c2b5d0074c677eccf9c40bb895b1851",
+    "lastUpdated": "2025-12-12T11:39:21.459Z"
+  },
+  "https://developers.vtex.com/docs/guides/enabling-manual-prices-for-subscriptions-v3": {
+    "hash": "015034841ebfe7608e3623358e0828e4",
+    "lastUpdated": "2025-12-12T11:39:22.323Z"
+  },
+  "https://developers.vtex.com/docs/guides/how-to-keep-attachments-from-original-orders-in-subscriptions": {
+    "hash": "0287f7449a73331663fb22d6e98c74e6",
+    "lastUpdated": "2025-12-12T11:39:22.323Z"
+  },
+  "https://developers.vtex.com/docs/guides/subscriptions-api-v3-overview": {
+    "hash": "a2a86da0dd7d8b474916c90f8c7540ad",
+    "lastUpdated": "2025-12-12T11:39:22.323Z"
+  },
+  "https://developers.vtex.com/docs/guides/troubleshooting": {
+    "hash": "9a6a966062fbdb270dd218d703bcc6b3",
+    "lastUpdated": "2025-12-12T11:39:22.324Z"
+  },
+  "https://developers.vtex.com/docs/guides/ui-customization-my-authentication": {
+    "hash": "a96a3b1b562f6156f211766374376d9b",
+    "lastUpdated": "2025-12-12T11:39:22.324Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexjs": {
+    "hash": "8d1fae5735591e4553af9bd5ecda2126",
+    "lastUpdated": "2025-12-12T11:39:22.324Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexjs-for-catalog": {
+    "hash": "7a1fe676fe2e526b58534c48185ce258",
+    "lastUpdated": "2025-12-12T11:39:23.018Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexjs-for-checkout": {
+    "hash": "b300b672041bcec810d85ebfa28f8af2",
+    "lastUpdated": "2025-12-12T11:39:24.587Z"
+  },
+  "https://developers.vtex.com/docs/guides/get-to-know-vtex-apis": {
+    "hash": "863ddcbf272138f0a00b382e10bf97bb",
+    "lastUpdated": "2025-12-12T11:39:24.587Z"
+  },
+  "https://developers.vtex.com/docs/guides/using-postman": {
+    "hash": "7f184533d48e892a2d42fd7ef6d02f5d",
+    "lastUpdated": "2025-12-12T11:39:24.587Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads-core-package-basic-usage": {
+    "hash": "1f43b94d6222625f8161866ffdc5266e",
+    "lastUpdated": "2025-12-12T11:39:24.587Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads-core-package-custom-hydration": {
+    "hash": "b3a8f14f9438ef365a7469f5e36d6a74",
+    "lastUpdated": "2025-12-12T11:39:25.466Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads-core-package-examples": {
+    "hash": "9cc61b4709d0c042cccfac21f14cc731",
+    "lastUpdated": "2025-12-12T11:39:25.467Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads-core-package-quickstart": {
+    "hash": "48841ef240e0b500dd27aeab76afeefc",
+    "lastUpdated": "2025-12-12T11:39:25.467Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads-react-package-quickstart": {
+    "hash": "23d2652ef24529fcc821f00ab9587f2b",
+    "lastUpdated": "2025-12-12T11:39:25.467Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads-javascript-sdk": {
+    "hash": "a9a461e6c16f64b021a7b5a74d2cff1c",
+    "lastUpdated": "2025-12-12T11:39:25.467Z"
+  },
+  "https://developers.vtex.com/docs/guides/ads-events": {
+    "hash": "7cc15dc3f41d3856b1ee321b9c36789b",
+    "lastUpdated": "2025-12-12T11:39:25.467Z"
+  },
+  "https://developers.vtex.com/docs/guides/ads-events-notification": {
+    "hash": "768a257af14196778ba2c4933730dbdc",
+    "lastUpdated": "2025-12-12T11:39:26.412Z"
+  },
+  "https://developers.vtex.com/docs/guides/clicks": {
+    "hash": "835b908f929c43d231533eb3464cc70f",
+    "lastUpdated": "2025-12-12T11:39:26.413Z"
+  },
+  "https://developers.vtex.com/docs/guides/conversion": {
+    "hash": "62f0e2b29464651a02b6a2f6c1222cd9",
+    "lastUpdated": "2025-12-12T11:39:26.413Z"
+  },
+  "https://developers.vtex.com/docs/guides/impressions": {
+    "hash": "3a724dee7cec14f9968eaf07afd09916",
+    "lastUpdated": "2025-12-12T11:39:26.413Z"
+  },
+  "https://developers.vtex.com/docs/guides/understanding-ads-events": {
+    "hash": "65db6ed14c4bc7351a2f9806d2a44c77",
+    "lastUpdated": "2025-12-12T11:39:26.413Z"
+  },
+  "https://developers.vtex.com/docs/guides/views": {
+    "hash": "bddd4243b706406ac72ecc0208d71ea6",
+    "lastUpdated": "2025-12-12T11:39:26.413Z"
+  },
+  "https://developers.vtex.com/docs/guides/getting-started-with-vtex-ads-api": {
+    "hash": "cb95bbc3ce2dee85dde239327abe7d11",
+    "lastUpdated": "2025-12-12T11:39:27.160Z"
+  },
+  "https://developers.vtex.com/docs/guides/retrieving-ads": {
+    "hash": "ad77db8bd99577a98d05b41a87671cf3",
+    "lastUpdated": "2025-12-12T11:39:27.160Z"
+  },
+  "https://developers.vtex.com/docs/guides/digital-signage": {
+    "hash": "a05fcdfcae1180d25e7c8d3c165b5615",
+    "lastUpdated": "2025-12-12T11:39:27.160Z"
+  },
+  "https://developers.vtex.com/docs/guides/segmenting-campaigns": {
+    "hash": "c3d7459709deb6236b29ec8380984931",
+    "lastUpdated": "2025-12-12T11:39:27.966Z"
+  },
+  "https://developers.vtex.com/docs/guides/synchronizing-the-catalog-with-vtex-ads": {
+    "hash": "4af58f8d147d524a21b9e4fc957dc42a",
+    "lastUpdated": "2025-12-12T11:39:27.967Z"
+  },
+  "https://developers.vtex.com/docs/guides/synchronizing-inventory-information": {
+    "hash": "89b0cc02e606f65001a81e32529f6657",
+    "lastUpdated": "2025-12-12T11:39:27.967Z"
+  },
+  "https://developers.vtex.com/docs/guides/synchronizing-product-information": {
+    "hash": "4a128022d12be79178ecf5588fa4abb7",
+    "lastUpdated": "2025-12-12T11:39:27.967Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ads": {
+    "hash": "77c5b62ff39abc1f851d66967d459ec0",
+    "lastUpdated": "2025-12-12T11:39:27.967Z"
+  },
+  "https://developers.vtex.com/docs/guides/implementing-mtls": {
+    "hash": "567fba35f0dca460cd94f219df931599",
+    "lastUpdated": "2025-12-12T11:39:28.673Z"
+  },
+  "https://developers.vtex.com/docs/guides/managing-ssl-certificates": {
+    "hash": "e1afaf7cb6d0f03be72211d3d6467fef",
+    "lastUpdated": "2025-12-12T11:39:28.673Z"
+  },
+  "https://developers.vtex.com/docs/guides/revoking-ssl-private-certificates-when-using-mtls": {
+    "hash": "d6dd2ea3ea459311f5c059afa5449ea9",
+    "lastUpdated": "2025-12-12T11:39:28.673Z"
+  },
+  "https://developers.vtex.com/docs/guides/cloud-infrastructure": {
+    "hash": "91b9b129470ca433190fd85e7ebd5831",
+    "lastUpdated": "2025-12-12T11:39:30.027Z"
+  },
+  "https://developers.vtex.com/docs/guides/composability": {
+    "hash": "70c0b05d303e1d286e91c111417f3ff0",
+    "lastUpdated": "2025-12-12T11:39:30.028Z"
+  },
+  "https://developers.vtex.com/docs/guides/interactive-marchitecture-tool": {
+    "hash": "49867f568a550f9e9f4fc1a3960bda3b",
+    "lastUpdated": "2025-12-12T11:39:30.028Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-composable-components": {
+    "hash": "0b32a4156494dd33503b62bea1a56fe6",
+    "lastUpdated": "2025-12-12T11:39:31.334Z"
+  },
+  "https://developers.vtex.com/docs/guides/data-privacy": {
+    "hash": "95c767245333c2b7b81f88884c1f6e50",
+    "lastUpdated": "2025-12-12T11:39:32.070Z"
+  },
+  "https://developers.vtex.com/docs/guides/extensibility": {
+    "hash": "3fba699a25be6685f7440bc3129a30cf",
+    "lastUpdated": "2025-12-12T11:39:32.760Z"
+  },
+  "https://developers.vtex.com/docs/guides/developer-experience": {
+    "hash": "aab17a087fa97c7c85795be8f7e61719",
+    "lastUpdated": "2025-12-12T11:39:33.468Z"
+  },
+  "https://developers.vtex.com/docs/guides/store-architecture": {
+    "hash": "5a63b90d77c1438d9b8d39b4ece46905",
+    "lastUpdated": "2025-12-12T11:39:34.278Z"
+  },
+  "https://developers.vtex.com/docs/guides/understanding-vtex-reference-architectures": {
+    "hash": "6d55539a57c294bf531decd09b78de63",
+    "lastUpdated": "2025-12-12T11:39:34.278Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-platform-overview": {
+    "hash": "75be2e7e72c4ae914112334c157b12d8",
+    "lastUpdated": "2025-12-12T11:39:34.278Z"
+  },
+  "https://developers.vtex.com/docs/guides/how-to-customize-vtex-sales-app": {
+    "hash": "3930e56874aa40967246e295d7c1bd4b",
+    "lastUpdated": "2025-12-12T11:39:35.055Z"
+  },
+  "https://developers.vtex.com/docs/guides/add-extra-text-to-the-order-print": {
+    "hash": "27123830238cb53d1ba51946cd1a6750",
+    "lastUpdated": "2025-12-12T11:39:35.055Z"
+  },
+  "https://developers.vtex.com/docs/guides/allow-manual-prices-on-vtex-sales-app": {
+    "hash": "a119e31802d011c8d81b19116d6f46e8",
+    "lastUpdated": "2025-12-12T11:39:35.055Z"
+  },
+  "https://developers.vtex.com/docs/guides/change-vtex-sales-app-language": {
+    "hash": "5b6c124cd9ed6229aeb4f43c586a1007",
+    "lastUpdated": "2025-12-12T11:39:35.055Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-3-cloningtheboilerplaterepository": {
+    "hash": "0033864ed24751fc774d7c4cb9c641a0",
+    "lastUpdated": "2025-12-12T11:39:35.984Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-4-configuringyourappsettings": {
+    "hash": "5c869a0a7c51e7cd270b1cd0d992735b",
+    "lastUpdated": "2025-12-12T11:39:35.984Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-5-writingtheheaderandbodyscripts": {
+    "hash": "bcbd93de20212124080cea909d0c97ac",
+    "lastUpdated": "2025-12-12T11:39:35.984Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-6-listeningtostoreevents": {
+    "hash": "aa9c6fa806693a7f6f19f8c581ac503f",
+    "lastUpdated": "2025-12-12T11:39:35.984Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-7-structuringthedocumentation": {
+    "hash": "1056035997969ca57e574e6707307b3c",
+    "lastUpdated": "2025-12-12T11:39:35.984Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-8-makingyourpixelapppubliclyavailable": {
+    "hash": "fbb03eacd69ecd6dec9df679f25561fa",
+    "lastUpdated": "2025-12-12T11:39:36.999Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-what-is-a-vtex-app": {
+    "hash": "39674cc1cd6674a448e594b3819892a1",
+    "lastUpdated": "2025-12-12T11:39:36.999Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-what-is-vtex-io": {
+    "hash": "f7ae5f51f415dc84e4184469bc154add",
+    "lastUpdated": "2025-12-12T11:39:36.999Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-what-is-vtex-store-framework": {
+    "hash": "317fc38150a8d72a740f4a6ad4435902",
+    "lastUpdated": "2025-12-12T11:39:37.825Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-getting-started": {
+    "hash": "5eacf80f0b7eaf2560fe6bd5615b3dfd",
+    "lastUpdated": "2025-12-12T11:39:37.825Z"
+  },
+  "https://developers.vtex.com/docs/guides/developing-a-graphql-api-in-service-apps": {
+    "hash": "a457b4f1c0e1ac71451db46e5e1451bb",
+    "lastUpdated": "2025-12-12T11:39:37.826Z"
+  },
+  "https://developers.vtex.com/docs/guides/graphql-authorization-in-io-apps": {
+    "hash": "c63e2a7a165220e604a07a4d36c13f7e",
+    "lastUpdated": "2025-12-12T11:39:38.656Z"
+  },
+  "https://developers.vtex.com/docs/guides/graphql-ide": {
+    "hash": "84bab9de57ad4bd81698af650fc3b25a",
+    "lastUpdated": "2025-12-12T11:39:38.656Z"
+  },
+  "https://developers.vtex.com/docs/guides/graphql-in-vtex-io": {
+    "hash": "ac42d0f9410af4ab8b8c7622ca53a42f",
+    "lastUpdated": "2025-12-12T11:39:38.656Z"
+  },
+  "https://developers.vtex.com/docs/guides/implementing-cache-in-graphql-apis-for-io-apps": {
+    "hash": "08d5c39e7c1ad983317c2a9d42f333a2",
+    "lastUpdated": "2025-12-12T11:39:38.656Z"
+  },
+  "https://developers.vtex.com/docs/guides/integrating-an-app-with-a-graphql-api": {
+    "hash": "0444aba42c4fc6d173a17c3b63d63467",
+    "lastUpdated": "2025-12-12T11:39:39.489Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-graphql-api-list": {
+    "hash": "db9d64e994513147bc1d40f1749e5fa9",
+    "lastUpdated": "2025-12-12T11:39:39.489Z"
+  },
+  "https://developers.vtex.com/docs/guides/contributing": {
+    "hash": "bc27e94a9e63b0ba101b0d7c6cfb1a39",
+    "lastUpdated": "2025-12-12T11:39:40.327Z"
+  },
+  "https://developers.vtex.com/docs/guides/other-resources": {
+    "hash": "a3c5c80c548d35ee80d853c263246720",
+    "lastUpdated": "2025-12-12T11:39:40.327Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-frequently-asked-questions": {
+    "hash": "3eb38ebf28d4263e8dd048d18afc85bb",
+    "lastUpdated": "2025-12-12T11:39:41.235Z"
+  },
+  "https://developers.vtex.com/docs/guides/welcome": {
+    "hash": "05c030204efa45ddbdca42f78583f61f",
+    "lastUpdated": "2025-12-12T11:39:41.235Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-best-practices-for-optimizing-performance": {
+    "hash": "0c366d9d9946bfd1e3a3731c2283df1e",
+    "lastUpdated": "2025-12-12T11:39:42.016Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-developing-custom-storefront-components": {
+    "hash": "50b3a877be2771aafb4925a1d7d8e78d",
+    "lastUpdated": "2025-12-12T11:39:42.625Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-installing-apps-in-live-stores-best-practices": {
+    "hash": "ebf8e3a69e2aad3de7fd4abea5f51bc7",
+    "lastUpdated": "2025-12-12T11:39:42.625Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-optimizing-image-rendering": {
+    "hash": "00ea16a2daca413b20b2edc636ed9197",
+    "lastUpdated": "2025-12-12T11:39:42.625Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-homologation-requirements-for-vtex-app-store": {
+    "hash": "acbc22560085101b061be3151ee700a0",
+    "lastUpdated": "2025-12-12T11:39:42.625Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-business-guidelines-app-monetization": {
+    "hash": "0d64ba75cfc36921ce7f3dd25251afb0",
+    "lastUpdated": "2025-12-12T11:39:42.625Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-business-guidelines-marketing-assets": {
+    "hash": "ccd79cadcf08552809da262e6f193bb6",
+    "lastUpdated": "2025-12-12T11:39:43.399Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-design-guidelines": {
+    "hash": "799a0bfa79e175ad64475cbe359d809c",
+    "lastUpdated": "2025-12-12T11:39:44.154Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-docs-guidelines": {
+    "hash": "f766933c1adfb8569dd3f02eb8aa173c",
+    "lastUpdated": "2025-12-12T11:39:44.154Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-engineering-guidelines": {
+    "hash": "c9a4feca88cace45403bf4e5faed1cb3",
+    "lastUpdated": "2025-12-12T11:39:45.004Z"
+  },
+  "https://developers.vtex.com/docs/guides/concepts": {
+    "hash": "626c6af36a3800cd148176b5f942369d",
+    "lastUpdated": "2025-12-12T11:39:45.004Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-billing-options": {
+    "hash": "f556d28b08ae577da3a7d72f204e0c2f",
+    "lastUpdated": "2025-12-12T11:39:45.004Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-builders": {
+    "hash": "3d78d3f974c51dbf757088a956170500",
+    "lastUpdated": "2025-12-12T11:39:45.745Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-admin-builder": {
+    "hash": "114b6e5fa887fb1b00f4c495c91bcd2e",
+    "lastUpdated": "2025-12-12T11:39:45.745Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-assets-builder": {
+    "hash": "67101586d02a361a543d489079777d29",
+    "lastUpdated": "2025-12-12T11:39:45.745Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-docs-builder": {
+    "hash": "7cdd0d72437e0999a0c4a560422fcd9d",
+    "lastUpdated": "2025-12-12T11:39:46.495Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-graphql-builder": {
+    "hash": "bab7d8c0e3726e4144f7db5c7ef84ab2",
+    "lastUpdated": "2025-12-12T11:39:46.495Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-messages-builder": {
+    "hash": "26d575e07384eea6f5903f5cd2099807",
+    "lastUpdated": "2025-12-12T11:39:46.495Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-node-builder": {
+    "hash": "c750025c3404cde2d48b35d04bb05100",
+    "lastUpdated": "2025-12-12T11:39:47.277Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-paymentprovider-builder": {
+    "hash": "f3379d44ad4f07ed1cfcc25888ad201e",
+    "lastUpdated": "2025-12-12T11:39:47.277Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-pixel-builder": {
+    "hash": "96c31d0ec3ebf19af729f91ea4cd7dcf",
+    "lastUpdated": "2025-12-12T11:39:47.277Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-react-builder": {
+    "hash": "967bfe2a5e894aeffe2762afc02ec04c",
+    "lastUpdated": "2025-12-12T11:39:47.277Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-store-builder": {
+    "hash": "19063d7d3302c68512eba1d4e152fb77",
+    "lastUpdated": "2025-12-12T11:39:48.089Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-styles-builder": {
+    "hash": "186991b1a5e94942105f21f440b2b46d",
+    "lastUpdated": "2025-12-12T11:39:48.089Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-clients": {
+    "hash": "0085421973569f7f22bdbe58cb8087c0",
+    "lastUpdated": "2025-12-12T11:39:48.089Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-cms": {
+    "hash": "ea0b7ecf5e014e306b834159cb4f1a29",
+    "lastUpdated": "2025-12-12T11:39:48.089Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-components": {
+    "hash": "f81fa790181bb6156f12c11fd202330b",
+    "lastUpdated": "2025-12-12T11:39:48.813Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-composition": {
+    "hash": "9094af96f477b2ac961253e6c6d3c238",
+    "lastUpdated": "2025-12-12T11:39:48.813Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-dependencies": {
+    "hash": "ccebc4b10dd77276961811d32c11a721",
+    "lastUpdated": "2025-12-12T11:39:48.813Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexbr-kitlook": {
+    "hash": "0e6767b80c4a0750e684682bf982a877",
+    "lastUpdated": "2025-12-12T11:39:49.822Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexventures-livestreaming": {
+    "hash": "597eef3166c990839a55dc3c6db98b30",
+    "lastUpdated": "2025-12-12T11:39:50.717Z"
+  },
+  "https://developers.vtex.com/docs/guides/b2b-components": {
+    "hash": "626b3c89f75940b842581e3d3e9e215a",
+    "lastUpdated": "2025-12-12T11:39:50.717Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-order-configuration": {
+    "hash": "2e88ef30e20061658a848cfb3d0f9464",
+    "lastUpdated": "2025-12-12T11:39:50.717Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-orderquote": {
+    "hash": "16d08e7083d1794a6d18d94f35f0a05f",
+    "lastUpdated": "2025-12-12T11:39:51.518Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-quickorder": {
+    "hash": "90ba34b5295b4bd9817113c504f2cd15",
+    "lastUpdated": "2025-12-12T11:39:51.518Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-shopper-location": {
+    "hash": "eb2ad95bb3505e56ca121d34d4fca99a",
+    "lastUpdated": "2025-12-12T11:39:52.339Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-sku-list": {
+    "hash": "c4e8f5f56c1ccc651ef25f9accc1756e",
+    "lastUpdated": "2025-12-12T11:39:52.339Z"
+  },
+  "https://developers.vtex.com/docs/guides/basic-components": {
+    "hash": "0e624a5f4da1572d5afaa86baeb22aee",
+    "lastUpdated": "2025-12-12T11:39:53.196Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-add-to-cart-button": {
+    "hash": "fad86594efe7d6b0d492f92ec32129bd",
+    "lastUpdated": "2025-12-12T11:39:53.196Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-breadcrumb": {
+    "hash": "4d5508cf4641555c7632cd5ef51f5101",
+    "lastUpdated": "2025-12-12T11:39:53.196Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-locale-switcher": {
+    "hash": "ccf69d285004a624fec47685d2ea3cd8",
+    "lastUpdated": "2025-12-12T11:39:53.196Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-minicart": {
+    "hash": "04292f6a0054c008ce21731a6bf71c51",
+    "lastUpdated": "2025-12-12T11:39:53.946Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-order-placed": {
+    "hash": "701f10f439b4c05f738a02d0f3d692ae",
+    "lastUpdated": "2025-12-12T11:39:54.786Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-customizer": {
+    "hash": "a626f0e367c63282e61b6aabc35b6d7f",
+    "lastUpdated": "2025-12-12T11:39:54.787Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-highlights": {
+    "hash": "c36ceae5c17658797dcda93df939b74c",
+    "lastUpdated": "2025-12-12T11:39:55.571Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-identifier": {
+    "hash": "b6189973852cf6064d3bb604405268f1",
+    "lastUpdated": "2025-12-12T11:39:55.571Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-list": {
+    "hash": "751811399e7c3f427a19b03a1a68f351",
+    "lastUpdated": "2025-12-12T11:39:56.401Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-price": {
+    "hash": "dee52a32688e009b4bceb17d40d33e2c",
+    "lastUpdated": "2025-12-12T11:39:57.175Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-quantity": {
+    "hash": "f6f64e0cba959f2dcb411c57665d82b8",
+    "lastUpdated": "2025-12-12T11:39:57.176Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-specifications": {
+    "hash": "3dbb521517e78a6be78415ff8bd56e0d",
+    "lastUpdated": "2025-12-12T11:39:57.955Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummaryattachmentlist": {
+    "hash": "a48d7248a43fefa5b39f9cec355c7920",
+    "lastUpdated": "2025-12-12T11:39:57.955Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummarybuybutton": {
+    "hash": "62d7c5228aad94dd792aae9c9c606417",
+    "lastUpdated": "2025-12-12T11:39:57.955Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummarydescription": {
+    "hash": "9b7762391e8503a3f507af7afcc2c4df",
+    "lastUpdated": "2025-12-12T11:39:57.955Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummaryimage": {
+    "hash": "0dfafb81b2e0ce637c272b91b22685a4",
+    "lastUpdated": "2025-12-12T11:39:58.731Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummarylist": {
+    "hash": "9b3d2262a7b431fd4de532ec0ca264ea",
+    "lastUpdated": "2025-12-12T11:39:58.731Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummaryname": {
+    "hash": "acbfe3d4b3213d8529d9550f0ded0778",
+    "lastUpdated": "2025-12-12T11:39:58.731Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummaryshelf": {
+    "hash": "d6957ad3661cb2030e2ea26f9088dca1",
+    "lastUpdated": "2025-12-12T11:39:58.731Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummaryskuname": {
+    "hash": "5e4e8271660f1700f4e412037a1958df",
+    "lastUpdated": "2025-12-12T11:39:58.731Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary-productsummaryskuselector": {
+    "hash": "c397ded1251dd811ac1d3be1cfa1aa5c",
+    "lastUpdated": "2025-12-12T11:39:58.731Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-summary": {
+    "hash": "f4639aef45bc2d923b6a385099f4a49b",
+    "lastUpdated": "2025-12-12T11:39:59.519Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-rich-text": {
+    "hash": "f04493f242c10289266903339e345397",
+    "lastUpdated": "2025-12-12T11:39:59.519Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-search-autocomplete": {
+    "hash": "af0eefdbcca5451486855a128d290269",
+    "lastUpdated": "2025-12-12T11:39:59.519Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-search-banner": {
+    "hash": "86b79aa84d6dc59223e4735c45a539b0",
+    "lastUpdated": "2025-12-12T11:39:59.519Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-search-didyoumean": {
+    "hash": "44e505b9008b46bc68f33afbc425f7a9",
+    "lastUpdated": "2025-12-12T11:39:59.519Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-search-result": {
+    "hash": "92af305d8ac2537f0773a62eb9d5b2a9",
+    "lastUpdated": "2025-12-12T11:40:01.072Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-search-suggestions": {
+    "hash": "303e93597f40495bdfd8ed76371fea76",
+    "lastUpdated": "2025-12-12T11:40:01.072Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-search": {
+    "hash": "3a416d2111bb1b596595e4db88e0dd51",
+    "lastUpdated": "2025-12-12T11:40:01.880Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-footer": {
+    "hash": "a15b99b12a49e3910eadfb18bca0195a",
+    "lastUpdated": "2025-12-12T11:40:01.880Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-header": {
+    "hash": "fe2a7ccc8c25ed37191bf3c898177e73",
+    "lastUpdated": "2025-12-12T11:40:02.664Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-image": {
+    "hash": "92fd9c5f9666f23d5a0418513031bc39",
+    "lastUpdated": "2025-12-12T11:40:02.664Z"
+  },
+  "https://developers.vtex.com/docs/guides/functional-apps": {
+    "hash": "fd56c2fd6860d53161de48f5ae8d6cac",
+    "lastUpdated": "2025-12-12T11:40:02.664Z"
+  },
+  "https://developers.vtex.com/docs/guides/affiliates-program-app": {
+    "hash": "66c03b282e3d696af18a45e8a1d3053c",
+    "lastUpdated": "2025-12-12T11:40:04.378Z"
+  },
+  "https://developers.vtex.com/docs/guides/assembly-options-app": {
+    "hash": "9824e4a60dd338b3247dd3b514399f7d",
+    "lastUpdated": "2025-12-12T11:40:04.378Z"
+  },
+  "https://developers.vtex.com/docs/guides/delivery-window-blocker-app": {
+    "hash": "a79d804697ef4b30cfc95b9730f2929e",
+    "lastUpdated": "2025-12-12T11:40:04.378Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-badges": {
+    "hash": "021dabe2e22787467286a734d281d149",
+    "lastUpdated": "2025-12-12T11:40:04.378Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-checkout-ui-custom-v0": {
+    "hash": "429d5c8f645e3b22f455b2492786da02",
+    "lastUpdated": "2025-12-12T11:40:05.171Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-checkout-ui-settings": {
+    "hash": "4dddc4191c0f9220361307a17d549fe6",
+    "lastUpdated": "2025-12-12T11:40:05.171Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-product-context": {
+    "hash": "ba72d37ebc592ddf853993aa2e6f3a95",
+    "lastUpdated": "2025-12-12T11:40:05.171Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-responsive-values": {
+    "hash": "f0e6c9cf54e8b9f956c2d0aa4b702751",
+    "lastUpdated": "2025-12-12T11:40:05.171Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-icons": {
+    "hash": "83a7bc7edf0bdb0c7c27b01ccdd812bd",
+    "lastUpdated": "2025-12-12T11:40:06.318Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-sitemap": {
+    "hash": "3df28cf91122b4292d0169731ed886b6",
+    "lastUpdated": "2025-12-12T11:40:07.164Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-telemarketing": {
+    "hash": "f6334a7a50c8ca38c3091f86b9a05c8c",
+    "lastUpdated": "2025-12-12T11:40:07.164Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexarg-abtester": {
+    "hash": "44b4f72fa1d123edcee950b9a233e50b",
+    "lastUpdated": "2025-12-12T11:40:07.165Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexbr-pickup-selector": {
+    "hash": "2821d2112f97c479436173326e753daa",
+    "lastUpdated": "2025-12-12T11:40:07.165Z"
+  },
+  "https://developers.vtex.com/docs/guides/layout-apps": {
+    "hash": "481f6be893f298d01cc4f1312de3bd4d",
+    "lastUpdated": "2025-12-12T11:40:07.968Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-condition-layout": {
+    "hash": "21b0b20e63e825f69e97999721f07d1f",
+    "lastUpdated": "2025-12-12T11:40:07.968Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-disclosure-layout": {
+    "hash": "cd93b7394ec9d372a86d9c42566a38e3",
+    "lastUpdated": "2025-12-12T11:40:08.732Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-modal-layout": {
+    "hash": "96b84f39371eff8f402c629a4add59c4",
+    "lastUpdated": "2025-12-12T11:40:08.732Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-overlay-layout": {
+    "hash": "07990751d543237af8570c3507839461",
+    "lastUpdated": "2025-12-12T11:40:08.732Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-responsive-layout": {
+    "hash": "e76e101490399838fe6721953df837be",
+    "lastUpdated": "2025-12-12T11:40:09.566Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-stack-layout": {
+    "hash": "dd9d8bfbe18a73abe103ab4731a79e53",
+    "lastUpdated": "2025-12-12T11:40:09.566Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-sticky-layout": {
+    "hash": "d2fd075b43629bcc0bc6b15eeef7362a",
+    "lastUpdated": "2025-12-12T11:40:09.566Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-tab-layout": {
+    "hash": "6a49e00715c5a16a5e9031b9050851dd",
+    "lastUpdated": "2025-12-12T11:40:09.566Z"
+  },
+  "https://developers.vtex.com/docs/guides/pixel-apps": {
+    "hash": "6fc656d6593e25aca279cea9da267e5a",
+    "lastUpdated": "2025-12-12T11:40:10.349Z"
+  },
+  "https://developers.vtex.com/docs/guides/setting-up-lazy-load-for-pixel-apps": {
+    "hash": "c8306cbba5e26b8312e262c4d936d202",
+    "lastUpdated": "2025-12-12T11:40:10.349Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-accessibe": {
+    "hash": "0b195deb2eeba2fa1fc88ebe8cb640bb",
+    "lastUpdated": "2025-12-12T11:40:10.349Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-alexa-certify-code": {
+    "hash": "c62cea3fb15067ed7047646180291edc",
+    "lastUpdated": "2025-12-12T11:40:10.349Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-audara": {
+    "hash": "e6f030886660f66926bcc905d9569005",
+    "lastUpdated": "2025-12-12T11:40:10.349Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-bazaarvoice": {
+    "hash": "da66584729f54eece738e4e3640e9fd6",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-bluecore": {
+    "hash": "fcb624902c88d260e3e93ce93cd351a5",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-blueknow": {
+    "hash": "1f994867e87da6a97c48f9ead534648d",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-btg360": {
+    "hash": "ea67e92808ee16cfddee9a0ca401f047",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-cookie-script": {
+    "hash": "af488b66aca82d66c0e09f8c2ecb1f13",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-cookiebot": {
+    "hash": "e245d80449ac971aae81464ce8694bbb",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-curbside-pickup": {
+    "hash": "4b53d766b8439ce80f6a9896a2d24beb",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-cybersource-fingerprint": {
+    "hash": "f0bceacb30f9d8c4c16d320d21a4c33e",
+    "lastUpdated": "2025-12-12T11:40:11.110Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-elfsight": {
+    "hash": "742cd8c9e5c6c33b8523a8f6164f9b90",
+    "lastUpdated": "2025-12-12T11:40:11.853Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-facebook-domain-verification": {
+    "hash": "c1c678843511a429fd2f80f077c2298a",
+    "lastUpdated": "2025-12-12T11:40:11.853Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-facebook-fbe": {
+    "hash": "7dbdbfbb2e1fbdb943b1f243923061f4",
+    "lastUpdated": "2025-12-12T11:40:12.637Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-facebook-pixel": {
+    "hash": "26264771bfe477be6768281ad10e20b6",
+    "lastUpdated": "2025-12-12T11:40:12.637Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-flixmedia": {
+    "hash": "061bf7dcf070ccc1783f7e81d64b3d7e",
+    "lastUpdated": "2025-12-12T11:40:12.637Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-google-customer-reviews": {
+    "hash": "fd987ab989629acaf1600b4fdd32c6b5",
+    "lastUpdated": "2025-12-12T11:40:12.637Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-google-search-console": {
+    "hash": "bebc34493b8ffa4b22ca28ef7220dd54",
+    "lastUpdated": "2025-12-12T11:40:12.637Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-hotjar": {
+    "hash": "d246d9462b45be9f224b0cce784f2c4f",
+    "lastUpdated": "2025-12-12T11:40:12.637Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-ideacrm": {
+    "hash": "d8c732b5cef10d55a4807e14bf5eba47",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-release-notes-sidecar-pixel-app": {
+    "hash": "d56176c3f06b72fa315594ce49498d14",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-iubenda": {
+    "hash": "0e4e90c2df92750dbaceddee3787670d",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-jivochat": {
+    "hash": "3502760f5fe368b9234f2558e85d04b6",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-kelkoo": {
+    "hash": "307b17afdb14610b1b65b75521146224",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-lucky-orange": {
+    "hash": "cbd3f5ad8a8d46458461ead82fb1d791",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-powerreviews": {
+    "hash": "159c61ee382af0ab72499f4d8febcef1",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-shareasale": {
+    "hash": "c2d70c86c0f2190c78e9fb687d215f08",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-smarthint": {
+    "hash": "a259ae989209c989cf018a407e6cb952",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-suite-share": {
+    "hash": "2023725f6ccbe70ba35ee4649ba6469b",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-tawk-to": {
+    "hash": "a29deab5428728eca96b1f39db0372f3",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-zopim": {
+    "hash": "a721b71cc04e50da230440634db30c51",
+    "lastUpdated": "2025-12-12T11:40:13.447Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtexarg-speech-to-text": {
+    "hash": "f331e016bbf3f94b2d4980fd7c1ccd03",
+    "lastUpdated": "2025-12-12T11:40:14.165Z"
+  },
+  "https://developers.vtex.com/docs/guides/store-components": {
+    "hash": "06044c6fb08f31e1de681e49fb7d3f81",
+    "lastUpdated": "2025-12-12T11:40:14.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-autocompleteresults": {
+    "hash": "56d7c39f0c11fe24893427da44a183ad",
+    "lastUpdated": "2025-12-12T11:40:14.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-availabilitysubscriber": {
+    "hash": "0121c675cadedafc32844685526cb040",
+    "lastUpdated": "2025-12-12T11:40:14.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-backtotopbutton": {
+    "hash": "09c4a73075783518747e635ebfb9dda4",
+    "lastUpdated": "2025-12-12T11:40:14.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-image": {
+    "hash": "821cc4e3cf185b6598857e2c34429176",
+    "lastUpdated": "2025-12-12T11:40:14.677Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-infocard": {
+    "hash": "7c53cd50ade7aa5b2ab61ce15655e514",
+    "lastUpdated": "2025-12-12T11:40:15.482Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-logo": {
+    "hash": "f79029018eb1ff3dec091e313468418f",
+    "lastUpdated": "2025-12-12T11:40:15.482Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-notification": {
+    "hash": "e9badce6bcf51ef6d2116a92743d7631",
+    "lastUpdated": "2025-12-12T11:40:15.483Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-productbrand": {
+    "hash": "8ebb85158a4dea7b609820bb2c344f9d",
+    "lastUpdated": "2025-12-12T11:40:15.483Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-productdescription": {
+    "hash": "493e4ac5fab29804997209325678765f",
+    "lastUpdated": "2025-12-12T11:40:15.483Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-productimages": {
+    "hash": "75da02fd3d3c15d0a92ea6a33b9275a0",
+    "lastUpdated": "2025-12-12T11:40:16.296Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-productname": {
+    "hash": "40961eebde5afe18e5aeec759b07819d",
+    "lastUpdated": "2025-12-12T11:40:16.296Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-productskuattributes": {
+    "hash": "e8819a533bc1c43a91cbc21f7ed928d5",
+    "lastUpdated": "2025-12-12T11:40:16.296Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-searchbar": {
+    "hash": "4ad8f779f6b0a65f662e2c238308bb37",
+    "lastUpdated": "2025-12-12T11:40:16.296Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-share": {
+    "hash": "1d05ccc11f7a8d0d5df8878bbff1be3a",
+    "lastUpdated": "2025-12-12T11:40:17.099Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-shippingsimulator": {
+    "hash": "be295071741584eb11ae4050b4c83d0b",
+    "lastUpdated": "2025-12-12T11:40:17.099Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-store-components-skuselector": {
+    "hash": "3b0e2c0c80a548e5681a0eec6b7818ee",
+    "lastUpdated": "2025-12-12T11:40:17.099Z"
+  },
+  "https://developers.vtex.com/docs/guides/store-framework-apps": {
+    "hash": "f4cdc5e95695bbf7bbfc430de6cf49eb",
+    "lastUpdated": "2025-12-12T11:40:17.099Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-b2b-suite": {
+    "hash": "3085d4a5a69d6e6465d9a858ac2f4dc5",
+    "lastUpdated": "2025-12-12T11:40:17.888Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-b2b-checkout-settings": {
+    "hash": "37ab54955a4b00d72c143c56aa38a7a0",
+    "lastUpdated": "2025-12-12T11:40:17.888Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-b2b-orders-history": {
+    "hash": "04f9ceb036e50b9461d4164fa7b8886d",
+    "lastUpdated": "2025-12-12T11:40:17.888Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-b2b-organizations": {
+    "hash": "5adf5bdb37a29b82448fe0c908a1d884",
+    "lastUpdated": "2025-12-12T11:40:19.385Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-b2b-quotes": {
+    "hash": "b8223fa726224c86bed7c44544c58297",
+    "lastUpdated": "2025-12-12T11:40:19.921Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-storefront-permissions-ui": {
+    "hash": "39868e750c15d334579962f761c64ae8",
+    "lastUpdated": "2025-12-12T11:40:20.615Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-storefront-permissions": {
+    "hash": "1af782c24f66c0ea27e7555941b7d800",
+    "lastUpdated": "2025-12-12T11:40:21.391Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-broadcaster": {
+    "hash": "65c10b1bfd71784ac866b57a7b6dab16",
+    "lastUpdated": "2025-12-12T11:40:21.391Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-deprecated-apps": {
+    "hash": "56ff46973da6a12ff525caafbc998ec7",
+    "lastUpdated": "2025-12-12T11:40:22.221Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-my-account": {
+    "hash": "f78740192d9c39cef99aa42cd11b0ff3",
+    "lastUpdated": "2025-12-12T11:40:22.222Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-my-account-commons": {
+    "hash": "db4f35460e172d9b3fc53930493e1b1f",
+    "lastUpdated": "2025-12-12T11:40:22.222Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-my-authentication": {
+    "hash": "952b9bc372bc4f30f20a23533be80157",
+    "lastUpdated": "2025-12-12T11:40:23.108Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-deactivating-the-vtex-io-native-service-worker": {
+    "hash": "c022e5161e97d6e425cdb552846e78a0",
+    "lastUpdated": "2025-12-12T11:40:23.108Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-debugging-performance-issues": {
+    "hash": "0f84fd4bd889a14ef4599b042aa2b165",
+    "lastUpdated": "2025-12-12T11:40:23.876Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-displaying-asynchronous-prices": {
+    "hash": "4cafa3af1b2950afd7d27a3b2ddfbb10",
+    "lastUpdated": "2025-12-12T11:40:23.876Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-enabling-order-form-optimization": {
+    "hash": "d902cab3615c72c93c3f645a98ca6220",
+    "lastUpdated": "2025-12-12T11:40:23.876Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-enabling-performance-settings": {
+    "hash": "0c366d9d9946bfd1e3a3731c2283df1e",
+    "lastUpdated": "2025-12-12T11:40:24.605Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-getting-started-with-lighthouse": {
+    "hash": "5b8bad452f9b41f0247f7729019af6df",
+    "lastUpdated": "2025-12-12T11:40:25.288Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-tracking-changes-in-lighthouse-performance-score": {
+    "hash": "2b1fa551bedd1b7b7f97f12a7dc0dfb6",
+    "lastUpdated": "2025-12-12T11:40:25.986Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-using-the-fold-blocks": {
+    "hash": "79b3adad09351d68b088540e283e9822",
+    "lastUpdated": "2025-12-12T11:40:25.986Z"
+  },
+  "https://developers.vtex.com/docs/guides/creating-an-institutional-page-with-content-types-1": {
+    "hash": "31948297b59f15c19bb597407964289b",
+    "lastUpdated": "2025-12-12T11:40:25.986Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-carousel-using-slider-layout": {
+    "hash": "72b24ec6ca2aa00cf7143ff1de42f404",
+    "lastUpdated": "2025-12-12T11:40:25.986Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-horizontal-product-summary": {
+    "hash": "442b3fc54f466617cbb55a817e56d3c6",
+    "lastUpdated": "2025-12-12T11:40:26.706Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-product-details-page": {
+    "hash": "dc9f27a4e4863d85e6b824a6b2246de2",
+    "lastUpdated": "2025-12-12T11:40:26.706Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-search-results-page-with-multiple-layouts": {
+    "hash": "bea60c86f63f6d81693476a044ab02da",
+    "lastUpdated": "2025-12-12T11:40:27.495Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-shelf": {
+    "hash": "103d42dbd3a01c561c92635a2bfe5e45",
+    "lastUpdated": "2025-12-12T11:40:27.495Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-cleaning-cart-data-on-log-out": {
+    "hash": "68421374395643867f57e3c9e4b6b8d7",
+    "lastUpdated": "2025-12-12T11:40:27.495Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-collecting-user-session-data": {
+    "hash": "19712c9333c2e2a281a7d016bb346426",
+    "lastUpdated": "2025-12-12T11:40:28.265Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-configuring-custom-images-for-the-sku-selector": {
+    "hash": "22bd939b6019bd306b8c01d603df6617",
+    "lastUpdated": "2025-12-12T11:40:28.265Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-creating-a-black-friday-page-from-template": {
+    "hash": "d0b11ab9093ad173ec82120a0a759de8",
+    "lastUpdated": "2025-12-12T11:40:28.265Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-creating-a-custom-search-results-page": {
+    "hash": "d491ee53635a4a7b58dab45ebcb11e19",
+    "lastUpdated": "2025-12-12T11:40:28.265Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-creating-a-native-form-for-your-store-users": {
+    "hash": "f7a6a7b1ba65470ab3b05b15c403c26a",
+    "lastUpdated": "2025-12-12T11:40:29.031Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-using-the-markers-prop-to-customize-a-blocks-message": {
+    "hash": "4e291bbb669b769ea3b7008d29e23602",
+    "lastUpdated": "2025-12-12T11:40:29.738Z"
+  },
+  "https://developers.vtex.com/docs/guides/checking-your-stores-binding-id": {
+    "hash": "a69bad9be8d5ae1a50078484bc005283",
+    "lastUpdated": "2025-12-12T11:40:29.739Z"
+  },
+  "https://developers.vtex.com/docs/guides/cross-border-custom-urls-1": {
+    "hash": "355b8d7387ff103045debe4cc853bf37",
+    "lastUpdated": "2025-12-12T11:40:29.739Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-creating-robots-files-for-cross-border-stores": {
+    "hash": "61af35fd99e232759557c3346123a31f",
+    "lastUpdated": "2025-12-12T11:40:29.739Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-indicating-alternate-pages-in-cross-border-stores": {
+    "hash": "993e5baa687fa991314a021d751faba5",
+    "lastUpdated": "2025-12-12T11:40:30.310Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-managing-landing-pages-in-cross-border-stores": {
+    "hash": "f953176962449660072d122a91d11c18",
+    "lastUpdated": "2025-12-12T11:40:30.311Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-adding-custom-headers-to-your-store-framework-store": {
+    "hash": "e27ce9fc72810e17f042bbc201c1d461",
+    "lastUpdated": "2025-12-12T11:40:30.311Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-going-live": {
+    "hash": "b976e49de66ef5f363af428740326b72",
+    "lastUpdated": "2025-12-12T11:40:30.311Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-go-live": {
+    "hash": "66b50f5a07569d2aa376d1e75d5a676e",
+    "lastUpdated": "2025-12-12T11:40:30.913Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-migrating-storefront-from-legacy-to-io": {
+    "hash": "fba182699af8d71c3a78ee406a832890",
+    "lastUpdated": "2025-12-12T11:40:30.913Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-migrating-cms-settings-after-major-update": {
+    "hash": "d850c8c8d5bc023670ae4d14b82a7a20",
+    "lastUpdated": "2025-12-12T11:40:30.914Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-semantic-html-migration": {
+    "hash": "f6a6af9946b90fdb39441f17b588fbe3",
+    "lastUpdated": "2025-12-12T11:40:30.914Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-multi-language-stores": {
+    "hash": "314a4fc4b2542ada00037a0bc7143ac5",
+    "lastUpdated": "2025-12-12T11:40:31.372Z"
+  },
+  "https://developers.vtex.com/docs/guides/catalog-internationalization": {
+    "hash": "f3b84e016d36fb0cba96ea2d5a05992c",
+    "lastUpdated": "2025-12-12T11:40:31.372Z"
+  },
+  "https://developers.vtex.com/docs/guides/storefront-content-internationalization": {
+    "hash": "5cbe6df279b3fdd2b9f290b425bb4b68",
+    "lastUpdated": "2025-12-12T11:40:31.832Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-disabling-automatic-translation": {
+    "hash": "b7a6d4d20631b472c6da70386707ac24",
+    "lastUpdated": "2025-12-12T11:40:31.832Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-internationalizing-product-prices": {
+    "hash": "972368fe066934b990971c075e2da8f9",
+    "lastUpdated": "2025-12-12T11:40:31.832Z"
+  },
+  "https://developers.vtex.com/docs/guides/vtex-io-documentation-overwriting-the-messages-app": {
+    "hash": "7b825e151594a78f19ad160fd69ddb66",
+    "lastUpdated": "2025-12-12T11:40:32.271Z"
+  },
+  "https://developers.vtex.com/docs/guides/developing-services-on-vtex-io": {
+    "hash": "9de873ae057c91a0880053a7de053b1b",
+    "lastUpdated": "2025-12-12T11:40:32.271Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-1-getting-started-with-the-boilerplate": {
+    "hash": "313f2939a67dc8ea216f278007eb3f41",
+    "lastUpdated": "2025-12-12T11:40:32.271Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-2-handling-and-receiving-events": {
+    "hash": "905fd45c21ee8de1c2c52fcbd52989ae",
+    "lastUpdated": "2025-12-12T11:40:33.267Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-3-using-the-analytics-client": {
+    "hash": "97f95d81bd0ca58f1a3f708cf8837df4",
+    "lastUpdated": "2025-12-12T11:40:33.267Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-4-using-events-as-triggers": {
+    "hash": "73cbb12f707e7512d03895a08edfbc14",
+    "lastUpdated": "2025-12-12T11:40:34.295Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-5-using-the-master-data-client": {
+    "hash": "4c97339bc0b7d37c0d6cf076a8acccf6",
+    "lastUpdated": "2025-12-12T11:40:34.295Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-6-graphql-retrieving-data-from-master-data": {
+    "hash": "95b141a95ea2973429058ac18ac18828",
+    "lastUpdated": "2025-12-12T11:40:34.801Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-7-using-graphiql": {
+    "hash": "f9fb3cba7045bb9d87bba6319b3150be",
+    "lastUpdated": "2025-12-12T11:40:34.802Z"
+  },
+  "https://developers.vtex.com/docs/guides/services-conclusion": {
+    "hash": "5b54d8e59c7f5de25e8e30c9ee340341",
+    "lastUpdated": "2025-12-12T11:40:35.326Z"
+  }
+}

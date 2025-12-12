@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { upsertDocs, getCollectionStats } from "../lib/chroma";
+import { upsertDocs, getCollectionStats } from "../lib/chroma-rest";
 
 interface ManualDoc {
   topic: string;
