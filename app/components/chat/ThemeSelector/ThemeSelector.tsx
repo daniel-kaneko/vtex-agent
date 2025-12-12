@@ -24,6 +24,8 @@ const themes: ThemeOption[] = [
 export function ThemeSelector({
   currentTheme,
   onThemeChange,
+  matrixRain,
+  onMatrixRainChange,
 }: ThemeSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -48,29 +50,62 @@ export function ThemeSelector({
             className="fixed inset-0 z-10"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute right-0 top-full mt-1 z-20 bg-[var(--bg-soft)] border border-[var(--bg-highlight)] py-1 min-w-[140px] animate-fade-in">
+          <div className="absolute right-0 top-full mt-1 z-20 bg-[var(--bg-soft)] border border-[var(--bg-highlight)] py-1 min-w-[160px] animate-fade-in">
             <div className="px-2 py-1 text-xs text-[var(--fg-muted)] border-b border-[var(--bg-highlight)]">
               theme
             </div>
             {themes.map((theme) => (
-              <button
+              <div
                 key={theme.id}
-                onClick={() => handleSelect(theme.id)}
-                className={`w-full px-2 py-1 text-left text-sm flex items-center gap-2 hover:bg-[var(--bg-highlight)] transition-colors ${
+                className={`w-full px-2 py-1 text-sm flex items-center gap-2 hover:bg-[var(--bg-highlight)] transition-colors ${
                   currentTheme === theme.id
                     ? "text-[var(--fg)]"
                     : "text-[var(--fg-dim)]"
                 }`}
               >
-                <span
-                  className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: theme.color }}
-                />
-                <span>{theme.name}</span>
-                {currentTheme === theme.id && (
-                  <span className="ml-auto text-[var(--green)]">✓</span>
+                <button
+                  onClick={() => handleSelect(theme.id)}
+                  className="flex items-center gap-2 flex-1"
+                >
+                  <span
+                    className="w-2 h-2 rounded-full"
+                    style={{ backgroundColor: theme.color }}
+                  />
+                  <span>{theme.name}</span>
+                  {currentTheme === theme.id && theme.id !== "matrix" && (
+                    <span className="ml-auto text-[var(--green)]">✓</span>
+                  )}
+                </button>
+                {theme.id === "matrix" && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (currentTheme === "matrix") {
+                        onMatrixRainChange(!matrixRain);
+                      }
+                    }}
+                    disabled={currentTheme !== "matrix"}
+                    className={`ml-auto w-6 h-3 rounded-full transition-all relative flex items-center ${
+                      currentTheme !== "matrix"
+                        ? "bg-[var(--bg-highlight)] opacity-30 cursor-not-allowed"
+                        : matrixRain
+                        ? "bg-[var(--green)]"
+                        : "bg-[var(--bg-highlight)]"
+                    }`}
+                    title={currentTheme === "matrix" ? "Toggle rain effect" : "Select Matrix theme first"}
+                  >
+                    <span
+                      className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                        currentTheme !== "matrix"
+                          ? "bg-[var(--fg-muted)] ml-0.5"
+                          : matrixRain
+                          ? "bg-white ml-3.5"
+                          : "bg-white ml-0.5"
+                      }`}
+                    />
+                  </button>
                 )}
-              </button>
+              </div>
             ))}
           </div>
         </>

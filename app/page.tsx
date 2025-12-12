@@ -8,6 +8,7 @@ import {
   EmptyState,
   ChatInput,
   ThemeSelector,
+  MatrixRain,
   Theme,
 } from "./components/chat";
 import { useChat } from "@/hooks/useChat";
@@ -16,14 +17,17 @@ export default function Home() {
   const { messages, isLoading, sendMessage } = useChat();
   const [input, setInput] = useState("");
   const [theme, setTheme] = useState<Theme>("grey");
+  const [matrixRain, setMatrixRain] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme | null;
+    const savedRain = localStorage.getItem("matrixRain") === "true";
     if (savedTheme) {
       setTheme(savedTheme);
       document.documentElement.setAttribute("data-theme", savedTheme);
     }
+    setMatrixRain(savedRain);
   }, []);
 
   const handleThemeChange = (newTheme: Theme) => {
@@ -34,6 +38,11 @@ export default function Home() {
       return document.documentElement.removeAttribute("data-theme");
 
     document.documentElement.setAttribute("data-theme", newTheme);
+  };
+
+  const handleMatrixRainChange = (enabled: boolean) => {
+    setMatrixRain(enabled);
+    localStorage.setItem("matrixRain", String(enabled));
   };
 
   useEffect(() => {
@@ -50,11 +59,17 @@ export default function Home() {
   return (
     <div className="h-screen flex flex-col bg-[var(--bg)] overflow-hidden">
       <Header>
-        <ThemeSelector currentTheme={theme} onThemeChange={handleThemeChange} />
+        <ThemeSelector
+          currentTheme={theme}
+          onThemeChange={handleThemeChange}
+          matrixRain={matrixRain}
+          onMatrixRainChange={handleMatrixRainChange}
+        />
       </Header>
 
-      <main className="flex-1 overflow-y-auto min-h-0">
-        <div className="max-w-4xl mx-auto px-4 py-4">
+      <main className="flex-1 overflow-y-auto min-h-0 relative">
+        {theme === "matrix" && <MatrixRain enabled={matrixRain} />}
+        <div className="max-w-4xl mx-auto px-4 py-4 relative z-10">
           {messages.length === 0 ? (
             <EmptyState />
           ) : (

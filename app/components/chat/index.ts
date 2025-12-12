@@ -10,6 +10,7 @@ export { MessageBubble } from "./MessageBubble";
 export { EmptyState } from "./EmptyState";
 export { ChatInput } from "./ChatInput";
 export { ThemeSelector } from "./ThemeSelector";
+export { MatrixRain } from "./MatrixRain";
 
 // Types
 export type { Message, Source } from "./types";

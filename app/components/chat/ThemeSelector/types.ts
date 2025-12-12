@@ -16,6 +16,10 @@ export interface ThemeSelectorProps {
   currentTheme: Theme;
   /** Callback when theme changes */
   onThemeChange: (theme: Theme) => void;
+  /** Whether matrix rain effect is enabled */
+  matrixRain: boolean;
+  /** Callback when matrix rain toggle changes */
+  onMatrixRainChange: (enabled: boolean) => void;
 }
 
 /**
