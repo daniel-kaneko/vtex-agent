@@ -60,9 +60,9 @@ export function SnowEffect({ enabled }: SnowEffectProps) {
     }
 
     const drawMountains = () => {
-      const mountainColor1 = "rgba(30, 40, 60, 0.6)";
-      const mountainColor2 = "rgba(40, 55, 75, 0.5)";
-      const mountainColor3 = "rgba(50, 70, 90, 0.4)";
+      const mountainColor1 = "rgba(200, 205, 215, 0.5)";
+      const mountainColor2 = "rgba(185, 190, 205, 0.38)";
+      const mountainColor3 = "rgba(170, 180, 195, 0.26)";
 
       ctx.fillStyle = mountainColor3;
       ctx.beginPath();
