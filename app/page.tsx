@@ -79,8 +79,12 @@ export default function Home() {
       </Header>
 
       <main className="flex-1 overflow-y-auto min-h-0 relative">
-        {theme === "matrix" && <MatrixRain enabled={matrixRain} />}
-        {theme === "christmas" && <SnowEffect enabled={christmasSnow} />}
+        <div className="sticky top-0 left-0 w-full h-0 z-0 pointer-events-none">
+          <div className="absolute top-0 left-0 w-full h-[calc(100vh-8rem)]">
+            {theme === "matrix" && <MatrixRain enabled={matrixRain} />}
+            {theme === "christmas" && <SnowEffect enabled={christmasSnow} />}
+          </div>
+        </div>
         <div className="max-w-4xl mx-auto px-4 py-4 relative z-10">
           {messages.length === 0 ? (
             <EmptyState />

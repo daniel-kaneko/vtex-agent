@@ -18,7 +18,7 @@
     "ingest:sitemap": "tsx scripts/ingest-sitemap.ts",
     "chroma:inspect": "tsx scripts/chroma-inspect.ts",
     "chroma:reset": "tsx scripts/chroma-reset.ts",
-    "chroma:sync": "pnpm ingest:manual && pnpm ingest:urls && pnpm ingest:openapi && pnpm ingest:sitemap && pnpm chroma:inspect",
+    "chroma:sync": "pnpm ingest:manual && pnpm ingest:urls && pnpm ingest:openapi && pnpm ingest:sitemap",
     "chroma:fresh": "tsx scripts/countdown.ts && pnpm chroma:reset && pnpm chroma:sync",
     "ollama:start": "ollama serve",
     "ollama:pull": "ollama pull llama3.1:8b && ollama pull mxbai-embed-large"
