@@ -77,33 +77,32 @@ export function ThemeSelector({
                   )}
                 </button>
                 {theme.id === "matrix" && (
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      if (currentTheme === "matrix") {
-                        onMatrixRainChange(!matrixRain);
-                      }
-                    }}
-                    disabled={currentTheme !== "matrix"}
-                    className={`ml-auto w-6 h-3 rounded-full transition-all relative flex items-center ${
+                  <label
+                    className={`ml-auto flex items-center gap-1 text-xs ${
                       currentTheme !== "matrix"
-                        ? "bg-[var(--bg-highlight)] opacity-30 cursor-not-allowed"
-                        : matrixRain
-                        ? "bg-[var(--green)]"
-                        : "bg-[var(--bg-highlight)]"
+                        ? "opacity-30 cursor-not-allowed"
+                        : "cursor-pointer"
                     }`}
-                    title={currentTheme === "matrix" ? "Toggle rain effect" : "Select Matrix theme first"}
+                    title={
+                      currentTheme === "matrix"
+                        ? "Toggle rain effect"
+                        : "Select Matrix theme first"
+                    }
                   >
-                    <span
-                      className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                        currentTheme !== "matrix"
-                          ? "bg-[var(--fg-muted)] ml-0.5"
-                          : matrixRain
-                          ? "bg-white ml-3.5"
-                          : "bg-white ml-0.5"
-                      }`}
+                    <span className="text-[var(--fg-dim)] text-xs">+swag?</span>
+                    <input
+                      type="checkbox"
+                      checked={matrixRain}
+                      disabled={currentTheme !== "matrix"}
+                      onChange={(e) => {
+                        e.stopPropagation();
+                        if (currentTheme === "matrix") {
+                          onMatrixRainChange(!matrixRain);
+                        }
+                      }}
+                      className="w-3 h-3 accent-[var(--green)]"
                     />
-                  </button>
+                  </label>
                 )}
               </div>
             ))}
@@ -139,4 +138,3 @@ function CogIcon() {
     </svg>
   );
 }
-
