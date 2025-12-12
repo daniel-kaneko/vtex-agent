@@ -11,6 +11,7 @@ export { EmptyState } from "./EmptyState";
 export { ChatInput } from "./ChatInput";
 export { ThemeSelector } from "./ThemeSelector";
 export { MatrixRain } from "./MatrixRain";
+export { SnowEffect } from "./SnowEffect";
 
 // Types
 export type { Message, Source } from "./types";

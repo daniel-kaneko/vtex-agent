@@ -6,7 +6,7 @@
 /**
  * Available theme options
  */
-export type Theme = "grey" | "gruvbox" | "nord" | "tokyo" | "catppuccin" | "matrix";
+export type Theme = "grey" | "gruvbox" | "nord" | "tokyo" | "catppuccin" | "matrix" | "christmas";
 
 /**
  * Props for the ThemeSelector component
@@ -20,6 +20,10 @@ export interface ThemeSelectorProps {
   matrixRain: boolean;
   /** Callback when matrix rain toggle changes */
   onMatrixRainChange: (enabled: boolean) => void;
+  /** Whether christmas snow effect is enabled */
+  christmasSnow: boolean;
+  /** Callback when christmas snow toggle changes */
+  onChristmasSnowChange: (enabled: boolean) => void;
 }
 
 /**

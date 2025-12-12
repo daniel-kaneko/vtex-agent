@@ -10,6 +10,7 @@ const themes: ThemeOption[] = [
   { id: "tokyo", name: "Tokyo", color: "#bb9af7" },
   { id: "catppuccin", name: "Catppuccin", color: "#f5c2e7" },
   { id: "matrix", name: "Matrix", color: "#00ff41" },
+  { id: "christmas", name: "Christmas", color: "#c41e3a" },
 ];
 
 /**
@@ -26,6 +27,8 @@ export function ThemeSelector({
   onThemeChange,
   matrixRain,
   onMatrixRainChange,
+  christmasSnow,
+  onChristmasSnowChange,
 }: ThemeSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -72,7 +75,7 @@ export function ThemeSelector({
                     style={{ backgroundColor: theme.color }}
                   />
                   <span>{theme.name}</span>
-                  {currentTheme === theme.id && theme.id !== "matrix" && (
+                  {currentTheme === theme.id && !["matrix", "christmas"].includes(theme.id) && (
                     <span className="ml-auto text-[var(--green)]">✓</span>
                   )}
                 </button>
@@ -101,6 +104,34 @@ export function ThemeSelector({
                         }
                       }}
                       className="w-3 h-3 appearance-none rounded-sm border border-[var(--fg-muted)] bg-[var(--bg-highlight)] checked:bg-[var(--green)] checked:border-[var(--green)] relative checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-[8px] checked:after:text-black checked:after:font-bold"
+                    />
+                  </label>
+                )}
+                {theme.id === "christmas" && (
+                  <label
+                    className={`ml-auto flex items-center gap-1 text-xs ${
+                      currentTheme !== "christmas"
+                        ? "opacity-30 cursor-not-allowed"
+                        : "cursor-pointer"
+                    }`}
+                    title={
+                      currentTheme === "christmas"
+                        ? "Toggle snow effect"
+                        : "Select Christmas theme first"
+                    }
+                  >
+                    <span className="text-[var(--fg-dim)] text-xs">+snow?</span>
+                    <input
+                      type="checkbox"
+                      checked={christmasSnow}
+                      disabled={currentTheme !== "christmas"}
+                      onChange={(e) => {
+                        e.stopPropagation();
+                        if (currentTheme === "christmas") {
+                          onChristmasSnowChange(!christmasSnow);
+                        }
+                      }}
+                      className="w-3 h-3 appearance-none rounded-sm border border-[var(--fg-muted)] bg-[var(--bg-highlight)] checked:bg-[var(--red)] checked:border-[var(--red)] relative checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-[8px] checked:after:text-white checked:after:font-bold"
                     />
                   </label>
                 )}

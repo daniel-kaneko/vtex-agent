@@ -100,7 +100,24 @@
   --blue: #00dd55;
   --red: #ff3333;
   --orange: #88ff44;
-  }
+}
+
+/* Christmas theme */
+[data-theme="christmas"] {
+  --bg-hard: #1a0a0a;
+  --bg: #2d1212;
+  --bg-soft: #3d1a1a;
+  --bg-highlight: #4a2020;
+  --fg: #f5f0e6;
+  --fg-dim: #d4c9b9;
+  --fg-muted: #8b7355;
+  --accent: #c41e3a;
+  --green: #2e8b57;
+  --yellow: #ffd700;
+  --blue: #87ceeb;
+  --red: #c41e3a;
+  --orange: #ff6b35;
+}
 
 * {
   box-sizing: border-box;
