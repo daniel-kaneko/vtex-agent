@@ -1,10 +1,10 @@
 /**
- * Shared types for chat components
- * @module chat/types
+ * Chat domain types
+ * @module types/chat
  */
 
 /**
- * Represents a source document used in the response
+ * Represents a source document used in responses
  */
 export interface Source {
   /** Display name of the source */
@@ -20,7 +20,7 @@ export interface Message {
   /** Unique identifier for the message */
   id: string;
   /** Role of the message sender */
-  role: "user" | "assistant";
+  role: "system" | "user" | "assistant";
   /** Text content of the message */
   content: string;
   /** Timestamp when the message was created */
@@ -28,3 +28,14 @@ export interface Message {
   /** Sources used for assistant responses */
   sources?: Source[];
 }
+
+/**
+ * Simplified message format for API requests
+ */
+export interface ApiMessage {
+  /** Role of the message sender */
+  role: "system" | "user" | "assistant";
+  /** Text content of the message */
+  content: string;
+}
+

@@ -1,16 +1,8 @@
 import fs from "fs";
 import crypto from "crypto";
+import type { Cache, CacheEntry } from "@/types";
 
-export interface CacheEntry {
-  hash: string;
-  lastUpdated: string;
-  remoteHash?: string;
-  lastmod?: string;
-}
-
-export interface Cache {
-  [key: string]: CacheEntry;
-}
+export type { Cache, CacheEntry };
 
 export const DEFAULT_CACHE_TTL_DAYS = 7;
 

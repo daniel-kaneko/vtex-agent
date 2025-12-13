@@ -15,7 +15,9 @@ import { MessageBubbleProps } from "./types";
 export function MessageBubble({ message }: MessageBubbleProps) {
   const isUser = message.role === "user";
   const validSources =
-    message.sources?.filter((s) => s.name?.trim() && s.url?.trim()) || [];
+    message.sources?.filter(
+      (source) => source.name?.trim() && source.url?.trim()
+    ) || [];
   const hasSources = !isUser && validSources.length > 0;
 
   return (

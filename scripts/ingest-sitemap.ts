@@ -177,13 +177,16 @@ function getBatchFiles(): string[] {
   if (!fs.existsSync(TEMP_DIR)) return [];
   return fs
     .readdirSync(TEMP_DIR)
-    .filter((f) => f.endsWith(".jsonl") && !f.endsWith(".done.jsonl"))
-    .sort((a, b) => {
-      const numA = parseInt(a.split("-")[1], 10);
-      const numB = parseInt(b.split("-")[1], 10);
+    .filter(
+      (filename) =>
+        filename.endsWith(".jsonl") && !filename.endsWith(".done.jsonl")
+    )
+    .sort((fileA, fileB) => {
+      const numA = parseInt(fileA.split("-")[1], 10);
+      const numB = parseInt(fileB.split("-")[1], 10);
       return numA - numB;
     })
-    .map((f) => path.join(TEMP_DIR, f));
+    .map((filename) => path.join(TEMP_DIR, filename));
 }
 
 async function downloadBatch(
@@ -323,7 +326,7 @@ async function main(): Promise<void> {
   const dryRun = args.includes("--dry-run");
   const processOnly = args.includes("--process-only");
   const clean = args.includes("--clean");
-  const filterArg = args.find((a) => a.startsWith("--filter="));
+  const filterArg = args.find((arg) => arg.startsWith("--filter="));
   const filter = filterArg?.split("=")[1]?.toLowerCase();
 
   if (clean) {
@@ -338,7 +341,9 @@ async function main(): Promise<void> {
 
   let configs = loadConfig();
   if (filter) {
-    configs = configs.filter((c) => c.name.toLowerCase().includes(filter));
+    configs = configs.filter((config) =>
+      config.name.toLowerCase().includes(filter)
+    );
     console.log(`   Filter: *${filter}*`);
   }
 

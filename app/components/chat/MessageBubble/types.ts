@@ -3,7 +3,7 @@
  * @module chat/MessageBubble/types
  */
 
-import { Message } from "../types";
+import type { Message } from "@/types";
 
 /**
  * Props for the MessageBubble component

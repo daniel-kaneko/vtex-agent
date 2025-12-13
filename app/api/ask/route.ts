@@ -2,32 +2,16 @@ import { NextResponse } from "next/server";
 import { queryDocs } from "@/lib/chroma-rest";
 import { MIN_RELEVANCE_SCORE, DEFAULT_TOP_K } from "@/lib/constants";
 import aliases from "@/data/aliases.json";
+import type { ApiMessage, Source, QueryResult } from "@/types";
 
 const OLLAMA_HOST = process.env.OLLAMA_HOST || "http://localhost:11434";
 const DEFAULT_MODEL = process.env.OLLAMA_MODEL || "llama3.1:8b";
-
-interface Message {
-  role: "system" | "user" | "assistant";
-  content: string;
-}
-
-interface RetrievedDoc {
-  text: string;
-  source?: string;
-  url?: string;
-  score: number;
-}
-
-interface Source {
-  name: string;
-  url: string;
-}
 
 /**
  * Extracts unique sources from retrieved docs using relative threshold.
  * Only includes sources with scores at least 70% of the top result.
  */
-function extractSources(docs: RetrievedDoc[]): Source[] {
+function extractSources(docs: QueryResult[]): Source[] {
   if (docs.length === 0) return [];
 
   const topScore = docs[0]?.score ?? 0;
@@ -71,7 +55,7 @@ function expandQuery(query: string): string {
 /**
  * Builds a system prompt with relevant docs including source names.
  */
-function buildSystemPrompt(docs: RetrievedDoc[]): string {
+function buildSystemPrompt(docs: QueryResult[]): string {
   if (docs.length === 0) {
     return `
     You are a helpful assistant for VTEX documentation.
@@ -116,25 +100,26 @@ RULES:
 export async function POST(req: Request) {
   try {
     const {
-      messages,
+      messages: rawMessages,
       model = DEFAULT_MODEL,
       stream = false,
       useRAG = true,
       topK = DEFAULT_TOP_K,
     } = await req.json();
 
-    if (!messages || !Array.isArray(messages)) {
+    if (!rawMessages || !Array.isArray(rawMessages)) {
       return NextResponse.json(
         { error: "Missing or invalid 'messages' array" },
         { status: 400 }
       );
     }
 
-    let augmentedMessages: Message[] = [...messages];
+    const messages = rawMessages as ApiMessage[];
+    let augmentedMessages: ApiMessage[] = [...messages];
     let sources: Source[] = [];
 
     const lastUserMessage = useRAG
-      ? [...messages].reverse().find((m: Message) => m.role === "user")
+      ? [...messages].reverse().find((message) => message.role === "user")
       : null;
 
     if (lastUserMessage) {
@@ -144,7 +129,7 @@ export async function POST(req: Request) {
 
         augmentedMessages = [
           { role: "system", content: buildSystemPrompt(relevantDocs) },
-          ...messages.filter((m: Message) => m.role !== "system"),
+          ...messages.filter((message) => message.role !== "system"),
         ];
 
         sources = extractSources(relevantDocs);

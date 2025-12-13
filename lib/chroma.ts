@@ -83,11 +83,11 @@ export async function upsertDocs(
   const collection = await getDocsCollection();
 
   await collection.upsert({
-    ids: docs.map((d) => d.id),
-    documents: docs.map((d) => d.text),
-    metadatas: docs.map((d) => ({
-      source: d.source || "",
-      url: d.url || "",
+    ids: docs.map((doc) => doc.id),
+    documents: docs.map((doc) => doc.text),
+    metadatas: docs.map((doc) => ({
+      source: doc.source || "",
+      url: doc.url || "",
     })),
   });
 

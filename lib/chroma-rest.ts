@@ -4,6 +4,16 @@
  * Uses ChromaDB v2 API.
  */
 
+import type {
+  OllamaEmbeddingResponse,
+  ChromaCollection,
+  DocToUpsert,
+  QueryResult,
+  CollectionStats,
+} from "@/types";
+
+export type { DocToUpsert, QueryResult };
+
 const CHROMA_HOST = process.env.CHROMA_HOST || "http://localhost:8000";
 const OLLAMA_HOST = process.env.OLLAMA_HOST || "http://localhost:11434";
 const COLLECTION_NAME = "docs";
@@ -34,22 +44,6 @@ function sanitizeText(text: string): string {
   return result;
 }
 
-interface OllamaEmbeddingResponse {
-  embedding: number[];
-}
-
-interface ChromaCollection {
-  id: string;
-  name: string;
-}
-
-export interface DocToUpsert {
-  id: string;
-  text: string;
-  source?: string;
-  url?: string;
-}
-
 let cachedCollectionId: string | null = null;
 
 async function getEmbedding(text: string): Promise<number[]> {
@@ -74,7 +68,9 @@ async function getOrCreateCollection(): Promise<string> {
     throw new Error(`Failed to list collections: ${listRes.status}`);
 
   const collections: ChromaCollection[] = await listRes.json();
-  const existing = collections.find((c) => c.name === COLLECTION_NAME);
+  const existing = collections.find(
+    (collection) => collection.name === COLLECTION_NAME
+  );
   if (existing) {
     cachedCollectionId = existing.id;
     return existing.id;
@@ -102,9 +98,9 @@ export async function upsertDocsBatch(docs: DocToUpsert[]): Promise<number> {
 
   const collectionId = await getOrCreateCollection();
 
-  const sanitizedDocs = docs.map((d) => ({
-    ...d,
-    text: sanitizeText(d.text),
+  const sanitizedDocs = docs.map((doc) => ({
+    ...doc,
+    text: sanitizeText(doc.text),
   }));
 
   const embeddings: number[][] = [];
@@ -118,12 +114,12 @@ export async function upsertDocsBatch(docs: DocToUpsert[]): Promise<number> {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        ids: sanitizedDocs.map((d) => d.id),
-        documents: sanitizedDocs.map((d) => d.text),
+        ids: sanitizedDocs.map((doc) => doc.id),
+        documents: sanitizedDocs.map((doc) => doc.text),
         embeddings,
-        metadatas: sanitizedDocs.map((d) => ({
-          source: d.source || "",
-          url: d.url || "",
+        metadatas: sanitizedDocs.map((doc) => ({
+          source: doc.source || "",
+          url: doc.url || "",
         })),
       }),
     }
@@ -139,15 +135,14 @@ export async function upsertDocsBatch(docs: DocToUpsert[]): Promise<number> {
   return docs.length;
 }
 
-export async function getCollectionStatsRest(): Promise<{
-  count: number;
-  name: string;
-}> {
+export async function getCollectionStatsRest(): Promise<CollectionStats> {
   const listRes = await fetch(`${CHROMA_API_BASE}/collections`);
   if (!listRes.ok) return { count: 0, name: COLLECTION_NAME };
 
   const collections: ChromaCollection[] = await listRes.json();
-  const existing = collections.find((c) => c.name === COLLECTION_NAME);
+  const existing = collections.find(
+    (collection) => collection.name === COLLECTION_NAME
+  );
   if (!existing) return { count: 0, name: COLLECTION_NAME };
 
   const countRes = await fetch(
@@ -157,13 +152,6 @@ export async function getCollectionStatsRest(): Promise<{
 
   const count: number = await countRes.json();
   return { count, name: COLLECTION_NAME };
-}
-
-export interface QueryResult {
-  text: string;
-  source?: string;
-  url?: string;
-  score: number;
 }
 
 export async function queryDocs(

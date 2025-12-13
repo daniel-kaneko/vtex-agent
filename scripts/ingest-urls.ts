@@ -87,7 +87,7 @@ async function processUrl(
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const force = args.includes("--force");
-  const concurrencyArg = args.find((a) => a.startsWith("--concurrency="));
+  const concurrencyArg = args.find((arg) => arg.startsWith("--concurrency="));
   const concurrency = concurrencyArg
     ? parseInt(concurrencyArg.split("=")[1], 10)
     : DEFAULT_CONCURRENCY;

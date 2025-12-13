@@ -1,14 +1,8 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { Message } from "@/app/components/chat";
 import { CONTEXT_WINDOW, API_ENDPOINTS } from "@/lib/constants";
-
-interface StreamEvent {
-  type: "chunk" | "done";
-  content?: string;
-  sources?: Array<{ name: string; url: string }>;
-}
+import type { Message, StreamEvent } from "@/types";
 
 /**
  * Custom hook for chat functionality with streaming support.
@@ -31,11 +25,11 @@ export function useChat() {
 
       const assistantId = crypto.randomUUID();
 
-      setMessages((prev) => [...prev, userMessage]);
+      setMessages((currentMessages) => [...currentMessages, userMessage]);
       setIsLoading(true);
 
-      setMessages((prev) => [
-        ...prev,
+      setMessages((currentMessages) => [
+        ...currentMessages,
         {
           id: assistantId,
           role: "assistant",
@@ -48,7 +42,7 @@ export function useChat() {
       try {
         const recentMessages = [...messages, userMessage]
           .slice(-CONTEXT_WINDOW)
-          .map((m) => ({ role: m.role, content: m.content }));
+          .map((message) => ({ role: message.role, content: message.content }));
 
         const res = await fetch(API_ENDPOINTS.ask, {
           method: "POST",
@@ -82,19 +76,19 @@ export function useChat() {
               const event: StreamEvent = JSON.parse(jsonStr);
 
               if (event.type === "chunk" && event.content) {
-                setMessages((prev) =>
-                  prev.map((m) =>
-                    m.id === assistantId
-                      ? { ...m, content: m.content + event.content }
-                      : m
+                setMessages((currentMessages) =>
+                  currentMessages.map((message) =>
+                    message.id === assistantId
+                      ? { ...message, content: message.content + event.content }
+                      : message
                   )
                 );
               } else if (event.type === "done") {
-                setMessages((prev) =>
-                  prev.map((m) =>
-                    m.id === assistantId
-                      ? { ...m, sources: event.sources || [] }
-                      : m
+                setMessages((currentMessages) =>
+                  currentMessages.map((message) =>
+                    message.id === assistantId
+                      ? { ...message, sources: event.sources || [] }
+                      : message
                   )
                 );
               }
@@ -106,11 +100,11 @@ export function useChat() {
           error instanceof Error
             ? error.message
             : "failed to connect to server";
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantId
-              ? { ...m, content: `error: ${errorMessage}` }
-              : m
+        setMessages((currentMessages) =>
+          currentMessages.map((message) =>
+            message.id === assistantId
+              ? { ...message, content: `error: ${errorMessage}` }
+              : message
           )
         );
       } finally {

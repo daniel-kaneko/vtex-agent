@@ -125,12 +125,12 @@ async function fetchOpenAPIFiles(config: OpenAPIConfig): Promise<GitHubFile[]> {
   }>;
   return files
     .filter(
-      (f) =>
-        f.type === "file" &&
-        f.name.endsWith(".json") &&
-        f.name.startsWith(config.filePrefix)
+      (file) =>
+        file.type === "file" &&
+        file.name.endsWith(".json") &&
+        file.name.startsWith(config.filePrefix)
     )
-    .map((f) => ({ name: f.name, sha: f.sha }));
+    .map((file) => ({ name: file.name, sha: file.sha }));
 }
 
 async function fetchSpec(
@@ -300,9 +300,9 @@ async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry-run");
   const force = args.includes("--force");
-  const filterArg = args.find((a) => a.startsWith("--filter="));
+  const filterArg = args.find((arg) => arg.startsWith("--filter="));
   const filter = filterArg?.split("=")[1]?.toLowerCase();
-  const concurrencyArg = args.find((a) => a.startsWith("--concurrency="));
+  const concurrencyArg = args.find((arg) => arg.startsWith("--concurrency="));
   const concurrency = concurrencyArg
     ? parseInt(concurrencyArg.split("=")[1], 10)
     : DEFAULT_CONCURRENCY;
@@ -325,15 +325,15 @@ async function main(): Promise<void> {
   console.log(`\n📋 Found ${files.length} OpenAPI schemas`);
 
   if (filter) {
-    files = files.filter((f) => f.name.toLowerCase().includes(filter));
+    files = files.filter((file) => file.name.toLowerCase().includes(filter));
     console.log(`   After filter: ${files.length} schemas`);
   }
 
-  const unchangedFiles = files.filter((f) =>
-    shouldUseCacheByRemoteHash(cache, f.name, f.sha, force)
+  const unchangedFiles = files.filter((file) =>
+    shouldUseCacheByRemoteHash(cache, file.name, file.sha, force)
   );
   const changedFiles = files.filter(
-    (f) => !shouldUseCacheByRemoteHash(cache, f.name, f.sha, force)
+    (file) => !shouldUseCacheByRemoteHash(cache, file.name, file.sha, force)
   );
 
   console.log(`   📦 Unchanged (cached by SHA): ${unchangedFiles.length}`);

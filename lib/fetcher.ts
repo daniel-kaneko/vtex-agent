@@ -117,7 +117,8 @@ export async function fetchConcurrent<T = unknown>(
       };
     } finally {
       completed++;
-      const success = results.find((r) => r.url === task.url)?.content !== null;
+      const success =
+        results.find((result) => result.url === task.url)?.content !== null;
       onProgress?.(completed, tasks.length, task.url, success);
     }
   };

@@ -150,7 +150,7 @@ async function main() {
     console.log(
       `   [${allDocs.embeddings[0]
         .slice(0, 10)
-        .map((n) => n.toFixed(4))
+        .map((value) => value.toFixed(4))
         .join(", ")}...]`
     );
     console.log(`   Total dimensions: ${allDocs.embeddings[0].length}\n`);

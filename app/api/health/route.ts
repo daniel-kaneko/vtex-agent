@@ -1,16 +1,8 @@
 import { NextResponse } from "next/server";
 import { getCollectionStats } from "@/lib/chroma-rest";
+import type { HealthStatus } from "@/types";
 
 const OLLAMA_HOST = process.env.OLLAMA_HOST || "http://localhost:11434";
-
-interface HealthStatus {
-  status: "healthy" | "degraded" | "unhealthy";
-  services: {
-    ollama: { status: "up" | "down"; message?: string };
-    chroma: { status: "up" | "down"; message?: string; docCount?: number };
-  };
-  timestamp: string;
-}
 
 export async function GET() {
   const health: HealthStatus = {

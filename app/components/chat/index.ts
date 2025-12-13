@@ -15,7 +15,7 @@ export { SpaceEffect } from "./SpaceEffect";
 export { NightSkyEffect } from "./NightSkyEffect";
 export { SynthwaveEffect } from "./SynthwaveEffect";
 
-export type { Message, Source } from "./types";
+export type { Message, Source } from "@/types";
 export type { HeaderProps } from "./Header";
 export type { MessageBubbleProps } from "./MessageBubble";
 export type { ChatInputProps } from "./ChatInput";

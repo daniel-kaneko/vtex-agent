@@ -1,9 +1,7 @@
 import * as cheerio from "cheerio";
+import type { ExtractOptions } from "@/types";
 
-export interface ExtractOptions {
-  selector?: string | string[];
-  silent?: boolean;
-}
+export type { ExtractOptions };
 
 export const REMOVE_SELECTORS = [
   "script",
