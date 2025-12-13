@@ -8,13 +8,18 @@ import {
   EmptyState,
   ChatInput,
   ThemeSelector,
+  Theme,
+} from "./components/chat";
+import {
   MatrixRain,
   SnowEffect,
   SpaceEffect,
   NightSkyEffect,
   SynthwaveEffect,
-  Theme,
-} from "./components/chat";
+  OceanEffect,
+  CyberpunkEffect,
+  SakuraEffect,
+} from "./components/themes";
 import { useChat } from "@/hooks/useChat";
 
 export default function Home() {
@@ -26,6 +31,9 @@ export default function Home() {
   const [spaceStars, setSpaceStars] = useState(false);
   const [nightSkyRotation, setNightSkyRotation] = useState(false);
   const [synthwaveGrid, setSynthwaveGrid] = useState(false);
+  const [oceanBubbles, setOceanBubbles] = useState(false);
+  const [cyberpunkRain, setCyberpunkRain] = useState(false);
+  const [sakuraPetals, setSakuraPetals] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,6 +43,9 @@ export default function Home() {
     const savedStars = localStorage.getItem("spaceStars") === "true";
     const savedNightSky = localStorage.getItem("nightSkyRotation") === "true";
     const savedSynthwave = localStorage.getItem("synthwaveGrid") === "true";
+    const savedOcean = localStorage.getItem("oceanBubbles") === "true";
+    const savedCyberpunk = localStorage.getItem("cyberpunkRain") === "true";
+    const savedSakura = localStorage.getItem("sakuraPetals") === "true";
     if (savedTheme) {
       setTheme(savedTheme);
       document.documentElement.setAttribute("data-theme", savedTheme);
@@ -44,6 +55,9 @@ export default function Home() {
     setSpaceStars(savedStars);
     setNightSkyRotation(savedNightSky);
     setSynthwaveGrid(savedSynthwave);
+    setOceanBubbles(savedOcean);
+    setCyberpunkRain(savedCyberpunk);
+    setSakuraPetals(savedSakura);
   }, []);
 
   const handleThemeChange = (newTheme: Theme) => {
@@ -81,6 +95,21 @@ export default function Home() {
     localStorage.setItem("synthwaveGrid", String(enabled));
   };
 
+  const handleOceanBubblesChange = (enabled: boolean) => {
+    setOceanBubbles(enabled);
+    localStorage.setItem("oceanBubbles", String(enabled));
+  };
+
+  const handleCyberpunkRainChange = (enabled: boolean) => {
+    setCyberpunkRain(enabled);
+    localStorage.setItem("cyberpunkRain", String(enabled));
+  };
+
+  const handleSakuraPetalsChange = (enabled: boolean) => {
+    setSakuraPetals(enabled);
+    localStorage.setItem("sakuraPetals", String(enabled));
+  };
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isLoading]);
@@ -108,6 +137,12 @@ export default function Home() {
           onNightSkyRotationChange={handleNightSkyRotationChange}
           synthwaveGrid={synthwaveGrid}
           onSynthwaveGridChange={handleSynthwaveGridChange}
+          oceanBubbles={oceanBubbles}
+          onOceanBubblesChange={handleOceanBubblesChange}
+          cyberpunkRain={cyberpunkRain}
+          onCyberpunkRainChange={handleCyberpunkRainChange}
+          sakuraPetals={sakuraPetals}
+          onSakuraPetalsChange={handleSakuraPetalsChange}
         />
       </Header>
 
@@ -119,6 +154,9 @@ export default function Home() {
             {theme === "space" && <SpaceEffect enabled={spaceStars} />}
             {theme === "nightsky" && <NightSkyEffect enabled={nightSkyRotation} />}
             {theme === "synthwave" && <SynthwaveEffect enabled={synthwaveGrid} />}
+            {theme === "ocean" && <OceanEffect enabled={oceanBubbles} />}
+            {theme === "cyberpunk" && <CyberpunkEffect enabled={cyberpunkRain} />}
+            {theme === "sakura" && <SakuraEffect enabled={sakuraPetals} />}
           </div>
         </div>
         <div className="max-w-4xl mx-auto px-4 py-4 relative z-10">

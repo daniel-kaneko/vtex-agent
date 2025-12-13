@@ -204,6 +204,57 @@
   --orange: #ff6600;
 }
 
+/* Ocean theme */
+[data-theme="ocean"] {
+  --bg-hard: #020b18;
+  --bg: #041526;
+  --bg-soft: #082035;
+  --bg-highlight: #0d3050;
+  --fg: #c5e4f3;
+  --fg-dim: #7eb8d8;
+  --fg-muted: #3d7a9e;
+  --accent: #00d4aa;
+  --green: #00d4aa;
+  --yellow: #f0c674;
+  --blue: #4fc3f7;
+  --red: #ff6b8a;
+  --orange: #ffab70;
+}
+
+/* Cyberpunk/Neon theme */
+[data-theme="cyberpunk"] {
+  --bg-hard: #0a0a12;
+  --bg: #12121a;
+  --bg-soft: #1a1a25;
+  --bg-highlight: #252535;
+  --fg: #eaf0ff;
+  --fg-dim: #a0b0d0;
+  --fg-muted: #505570;
+  --accent: #ff2a6d;
+  --green: #05ffa1;
+  --yellow: #f9f002;
+  --blue: #01c8ee;
+  --red: #ff2a6d;
+  --orange: #ff6b2b;
+}
+
+/* Sakura theme */
+[data-theme="sakura"] {
+  --bg-hard: #1a1520;
+  --bg: #231c28;
+  --bg-soft: #2d2533;
+  --bg-highlight: #3d3345;
+  --fg: #f5e6f0;
+  --fg-dim: #d4b8c8;
+  --fg-muted: #8a6a7a;
+  --accent: #ff90b3;
+  --green: #a8e6cf;
+  --yellow: #ffd3a5;
+  --blue: #a8d8ea;
+  --red: #ff6b8a;
+  --orange: #ffb085;
+}
+
 * {
   box-sizing: border-box;
 }

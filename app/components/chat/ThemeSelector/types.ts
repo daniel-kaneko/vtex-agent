@@ -18,7 +18,10 @@ export type Theme =
   | "christmas"
   | "space"
   | "nightsky"
-  | "synthwave";
+  | "synthwave"
+  | "ocean"
+  | "cyberpunk"
+  | "sakura";
 
 /**
  * Props for the ThemeSelector component
@@ -36,6 +39,12 @@ export interface ThemeSelectorProps {
   onNightSkyRotationChange: (enabled: boolean) => void;
   synthwaveGrid: boolean;
   onSynthwaveGridChange: (enabled: boolean) => void;
+  oceanBubbles: boolean;
+  onOceanBubblesChange: (enabled: boolean) => void;
+  cyberpunkRain: boolean;
+  onCyberpunkRainChange: (enabled: boolean) => void;
+  sakuraPetals: boolean;
+  onSakuraPetalsChange: (enabled: boolean) => void;
 }
 
 /**

@@ -9,11 +9,6 @@ export { MessageBubble } from "./MessageBubble";
 export { EmptyState } from "./EmptyState";
 export { ChatInput } from "./ChatInput";
 export { ThemeSelector } from "./ThemeSelector";
-export { MatrixRain } from "./MatrixRain";
-export { SnowEffect } from "./SnowEffect";
-export { SpaceEffect } from "./SpaceEffect";
-export { NightSkyEffect } from "./NightSkyEffect";
-export { SynthwaveEffect } from "./SynthwaveEffect";
 
 export type { Message, Source } from "@/types";
 export type { HeaderProps } from "./Header";

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ThemeSelectorProps, ThemeOption, Theme } from "./types";
 
-const EFFECT_TOOLTIP = "⚡ Use with care: pretty but a bit resource intensive";
+const EFFECT_TOOLTIP = "⚡ Use with care ⚡";
 
 interface ThemeConfig extends ThemeOption {
   description: string;
@@ -88,6 +88,27 @@ const themes: ThemeConfig[] = [
     description: "80s neon retrowave 🌆",
     hasEffect: true,
   },
+  {
+    id: "ocean",
+    name: "Ocean",
+    color: "#00d4aa",
+    description: "Deep underwater vibes 🌊",
+    hasEffect: true,
+  },
+  {
+    id: "cyberpunk",
+    name: "Cyberpunk",
+    color: "#ff2a6d",
+    description: "Neon-lit rain city 🏙️",
+    hasEffect: true,
+  },
+  {
+    id: "sakura",
+    name: "Sakura",
+    color: "#ff90b3",
+    description: "Cherry blossom serenity 🌸",
+    hasEffect: true,
+  },
 ];
 
 /**
@@ -112,6 +133,12 @@ export function ThemeSelector({
   onNightSkyRotationChange,
   synthwaveGrid,
   onSynthwaveGridChange,
+  oceanBubbles,
+  onOceanBubblesChange,
+  cyberpunkRain,
+  onCyberpunkRainChange,
+  sakuraPetals,
+  onSakuraPetalsChange,
 }: ThemeSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -291,6 +318,86 @@ export function ThemeSelector({
                         e.stopPropagation();
                         if (currentTheme === "synthwave") {
                           onSynthwaveGridChange(!synthwaveGrid);
+                        }
+                      }}
+                      className="w-3 h-3 appearance-none rounded-sm border border-[var(--fg-muted)] bg-[var(--bg-highlight)] checked:bg-[var(--accent)] checked:border-[var(--accent)] disabled:checked:bg-[var(--fg-muted)] disabled:checked:border-[var(--fg-muted)] relative checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-[8px] checked:after:text-white checked:after:font-bold"
+                    />
+                  </label>
+                )}
+                {theme.id === "ocean" && (
+                  <label
+                    className={`ml-auto flex items-center gap-1 text-xs ${
+                      currentTheme !== "ocean"
+                        ? "opacity-30 cursor-not-allowed"
+                        : "cursor-pointer"
+                    }`}
+                    {...(currentTheme === "ocean" && {
+                      "data-tooltip": EFFECT_TOOLTIP,
+                    })}
+                  >
+                    <span className="text-[var(--fg-dim)] text-xs">+dive?</span>
+                    <input
+                      type="checkbox"
+                      checked={oceanBubbles}
+                      disabled={currentTheme !== "ocean"}
+                      onChange={(e) => {
+                        e.stopPropagation();
+                        if (currentTheme === "ocean") {
+                          onOceanBubblesChange(!oceanBubbles);
+                        }
+                      }}
+                      className="w-3 h-3 appearance-none rounded-sm border border-[var(--fg-muted)] bg-[var(--bg-highlight)] checked:bg-[var(--accent)] checked:border-[var(--accent)] disabled:checked:bg-[var(--fg-muted)] disabled:checked:border-[var(--fg-muted)] relative checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-[8px] checked:after:text-white checked:after:font-bold"
+                    />
+                  </label>
+                )}
+                {theme.id === "cyberpunk" && (
+                  <label
+                    className={`ml-auto flex items-center gap-1 text-xs ${
+                      currentTheme !== "cyberpunk"
+                        ? "opacity-30 cursor-not-allowed"
+                        : "cursor-pointer"
+                    }`}
+                    {...(currentTheme === "cyberpunk" && {
+                      "data-tooltip": EFFECT_TOOLTIP,
+                    })}
+                  >
+                    <span className="text-[var(--fg-dim)] text-xs">+rain?</span>
+                    <input
+                      type="checkbox"
+                      checked={cyberpunkRain}
+                      disabled={currentTheme !== "cyberpunk"}
+                      onChange={(e) => {
+                        e.stopPropagation();
+                        if (currentTheme === "cyberpunk") {
+                          onCyberpunkRainChange(!cyberpunkRain);
+                        }
+                      }}
+                      className="w-3 h-3 appearance-none rounded-sm border border-[var(--fg-muted)] bg-[var(--bg-highlight)] checked:bg-[var(--accent)] checked:border-[var(--accent)] disabled:checked:bg-[var(--fg-muted)] disabled:checked:border-[var(--fg-muted)] relative checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-[8px] checked:after:text-white checked:after:font-bold"
+                    />
+                  </label>
+                )}
+                {theme.id === "sakura" && (
+                  <label
+                    className={`ml-auto flex items-center gap-1 text-xs ${
+                      currentTheme !== "sakura"
+                        ? "opacity-30 cursor-not-allowed"
+                        : "cursor-pointer"
+                    }`}
+                    {...(currentTheme === "sakura" && {
+                      "data-tooltip": EFFECT_TOOLTIP,
+                    })}
+                  >
+                    <span className="text-[var(--fg-dim)] text-xs">
+                      +bloom?
+                    </span>
+                    <input
+                      type="checkbox"
+                      checked={sakuraPetals}
+                      disabled={currentTheme !== "sakura"}
+                      onChange={(e) => {
+                        e.stopPropagation();
+                        if (currentTheme === "sakura") {
+                          onSakuraPetalsChange(!sakuraPetals);
                         }
                       }}
                       className="w-3 h-3 appearance-none rounded-sm border border-[var(--fg-muted)] bg-[var(--bg-highlight)] checked:bg-[var(--accent)] checked:border-[var(--accent)] disabled:checked:bg-[var(--fg-muted)] disabled:checked:border-[var(--fg-muted)] relative checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-[8px] checked:after:text-white checked:after:font-bold"
